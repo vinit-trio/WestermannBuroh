@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
+
+    <title>Westermann+Buroh Studios | Food-Fotografie Hamburg</title>
+
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/fancybox.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-green focus:text-white focus:p-5 focus:z-99999">
+        Skip to content
+    </a>
+    <div class="flex h-screen">
+        <header id="header"
+            class="fixed bg-green z-50 inset-0 bottom-auto md:hidden text-white p-5 px-25 text-center text-12 gap-54 tracking-wider overflow-y-auto">
+            <div class="flex items-center justify-between">
+                <a href="index.html" aria-label="westermann-buroh">
+                    <img src="assets/images/logo.jpg" alt="westermann-buroh" class="w-75">
+                </a>
+                <button id="nav-icon" aria-expanded="false" aria-controls="mobile_menu"
+                    aria-label="Navigation umschalten">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <div class="z-50 fixed bg-green text-white inset-0 top-85 text-12" id="mobile_menu" aria-hidden="true" inert>
+            <div class="p-15 h-full flex flex-col gap-54 px-35 overflow-y-auto">
+                <nav class="uppercase font-bold flex flex-col gap-40">
+                    <ul class="flex flex-col gap-20">
+                        <li>
+                            <a class="inline-block" href="food.html">Food</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="reportage.html">Reportage</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="werbung.html">Werbung</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="portrait.html">Portrait</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="uber-uns.html">Über Uns</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                    <ul class="flex flex-col gap-20">
+                        <li>
+                            <a class="inline-block" href="https://www.whats-cooking.com/" target="_blank">Foodblog</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="impressum.html">Impressum</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex flex-col gap-54">
+                    <ul class="flex gap-14">
+                        <li>
+                            <a href="https://www.facebook.com/WestermannBuroh/" aria-label="Facebook-Konto link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="">
+                                    <g>
+                                        <path
+                                            d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"
+                                            fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com/whatscooking0/" aria-label="pinterest-Konto link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 438.529 438.529" style="enable-background:new 0 0 512 512"
+                                    xml:space="preserve" class="">
+                                    <g>
+                                        <path
+                                            d="M409.141 109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.751 9.801 259.065 0 219.281 0 179.5 0 142.812 9.801 109.22 29.407c-33.597 19.604-60.194 46.201-79.8 79.796C9.809 142.8.008 179.485.008 219.267c0 44.35 12.085 84.611 36.258 120.767 24.172 36.172 55.863 62.912 95.073 80.232-.762-20.365.476-37.209 3.709-50.532l28.267-119.348c-4.76-9.329-7.139-20.93-7.139-34.831 0-16.175 4.089-29.689 12.275-40.541 8.186-10.85 18.177-16.274 29.979-16.274 9.514 0 16.841 3.14 21.982 9.42 5.142 6.283 7.705 14.181 7.705 23.7 0 5.896-1.099 13.084-3.289 21.554-2.188 8.471-5.041 18.273-8.562 29.409-3.521 11.132-6.045 20.036-7.566 26.692-2.663 11.608-.476 21.553 6.567 29.838 7.042 8.278 16.372 12.423 27.983 12.423 20.365 0 37.065-11.324 50.107-33.972 13.038-22.655 19.554-50.159 19.554-82.514 0-24.938-8.042-45.21-24.129-60.813-16.085-15.609-38.496-23.417-67.239-23.417-32.161 0-58.192 10.327-78.082 30.978-19.891 20.654-29.836 45.352-29.836 74.091 0 17.132 4.854 31.505 14.56 43.112 3.235 3.806 4.283 7.898 3.14 12.279-.381 1.143-1.141 3.997-2.284 8.562-1.138 4.565-1.903 7.522-2.281 8.851-1.521 6.091-5.14 7.994-10.85 5.708-14.654-6.085-25.791-16.652-33.402-31.689-7.614-15.037-11.422-32.456-11.422-52.246 0-12.753 2.047-25.505 6.14-38.256 4.089-12.756 10.468-25.078 19.126-36.975 8.663-11.9 19.036-22.417 31.123-31.549 12.082-9.135 26.787-16.462 44.108-21.982s35.972-8.28 55.959-8.28c27.032 0 51.295 5.995 72.8 17.986 21.512 11.992 37.925 27.502 49.252 46.537 11.327 19.036 16.987 39.403 16.987 61.101 0 28.549-4.948 54.243-14.842 77.086-9.896 22.839-23.887 40.778-41.973 53.813-18.083 13.042-38.637 19.561-61.675 19.561-11.607 0-22.456-2.714-32.548-8.135-10.085-5.427-17.034-11.847-20.839-19.273-8.566 33.685-13.706 53.77-15.42 60.24-3.616 13.508-11.038 29.119-22.27 46.819 20.367 6.091 41.112 9.13 62.24 9.13 39.781 0 76.47-9.801 110.062-29.41 33.595-19.602 60.192-46.199 79.794-79.791 19.606-33.599 29.407-70.287 29.407-110.065.01-39.778-9.777-76.468-29.376-110.06z"
+                                            fill="#fff" opacity="1" data-original="#fff"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com/whatscookingdotcom" aria-label="instagram-Konto link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512"
+                                    xml:space="preserve" class="">
+                                    <g>
+                                        <path
+                                            d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0"
+                                            fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                        <path
+                                            d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0"
+                                            fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://whats-cooking.com/" aria-label="whats cooking link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="">
+                                    <g>
+                                        <path
+                                            d="M471.383 44.578C444.879 15.832 408.512 0 368.973 0c-29.555 0-56.621 9.344-80.45 27.77C276.5 37.07 265.605 48.45 256 61.73c-9.602-13.277-20.5-24.66-32.527-33.96C199.648 9.344 172.582 0 143.027 0c-39.539 0-75.91 15.832-102.414 44.578C14.426 72.988 0 111.801 0 153.871c0 43.3 16.137 82.938 50.781 124.742 30.992 37.395 75.535 75.356 127.117 119.313 17.614 15.012 37.579 32.027 58.309 50.152A30.023 30.023 0 0 0 256 455.516c7.285 0 14.316-2.641 19.785-7.43 20.73-18.129 40.707-35.152 58.328-50.172 51.575-43.95 96.117-81.906 127.11-119.305C495.867 236.81 512 197.172 512 153.867c0-42.066-14.426-80.879-40.617-109.289zm0 0"
+                                            fill="#fff" opacity="1" data-original="#fff"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://vimeo.com/user53421412" aria-label="vimeo-Konto link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 176 176" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="">
+                                    <g>
+                                        <g data-name="Layer 2">
+                                            <path
+                                                d="M159.67 0H16.33A16.33 16.33 0 0 0 0 16.33v143.34A16.33 16.33 0 0 0 16.33 176h143.34A16.33 16.33 0 0 0 176 159.67V16.33A16.33 16.33 0 0 0 159.67 0zM143 64.49c-.47 10.37-7.87 24.62-21.68 42.59C107.86 124.53 97.12 133.12 88 135a18.75 18.75 0 0 1-3.68.37c-9.47 0-18.69-26.52-24.77-48.78-3.18-11.46-5.86-16.27-8.94-16.12-2.84.09-6.61 2.76-10.61 5.59l-.12.1a2.93 2.93 0 0 1-4-.6l-2.28-2.94a3 3 0 0 1 .4-4L35.91 67C48.2 56.29 63.17 44 69.88 44c8.81 0 10.17 4.82 12.88 14.41.13.46 2.53 11.07 5.24 21.62s5.76 21.17 7.07 21.17c.79 0 3.53-3.5 8.48-11.27 4.07-6.4 7.35-12.43 8-14.69.75-2.67.62-4.72-.42-6.08-1.35-1.75-4.06-2.16-6.13-2.16a17.48 17.48 0 0 0-4.67.66 2.24 2.24 0 0 1-2.69-2.94c5.5-15.07 15.36-22.5 29.31-22 4.94.15 8.79 1.67 11.45 4.55 3.39 3.59 4.91 9.39 4.6 17.22z"
+                                                data-name="06.vimeo" fill="#fff" opacity="1" data-original="#fff"
+                                                class=""></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <aside
+            class="fixed inset-0 right-auto z-50 bg-green hidden md:flex w-full min-w-265 max-w-265 text-white py-36 px-45 flex-col justify-between items-center text-center text-12 gap-54 tracking-wider overflow-y-auto">
+            <a href="index.html" aria-label="westermann-buroh">
+                <img src="assets/images/logo.jpg" alt="westermann-buroh" class="w-75">
+            </a>
+            <nav class="uppercase font-bold flex flex-col gap-40">
+                <ul class="flex flex-col gap-10">
+                    <li>
+                        <a class="block" href="food.html">Food</a>
+                    </li>
+                    <li>
+                        <a class="block" href="reportage.html">Reportage</a>
+                    </li>
+                    <li>
+                        <a class="block" href="werbung.html">Werbung</a>
+                    </li>
+                    <li>
+                        <a class="block" href="portrait.html">Portrait</a>
+                    </li>
+                    <li>
+                        <a class="block" href="uber-uns.html">Über Uns</a>
+                    </li>
+                    <li>
+                        <a class="block" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col gap-10">
+                    <li>
+                        <a class="block" href="https://www.whats-cooking.com/" target="_blank">Foodblog</a>
+                    </li>
+                    <li>
+                        <a class="block" href="impressum.html">Impressum</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex flex-col gap-54">
+                <ul class="flex gap-14 justify-center">
+                    <li>
+                        <a href="#" aria-label="Facebook-Konto link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"
+                                        fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="pinterest-Konto link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 438.529 438.529" style="enable-background:new 0 0 512 512"
+                                xml:space="preserve" class="">
+                                <g>
+                                    <path
+                                        d="M409.141 109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.751 9.801 259.065 0 219.281 0 179.5 0 142.812 9.801 109.22 29.407c-33.597 19.604-60.194 46.201-79.8 79.796C9.809 142.8.008 179.485.008 219.267c0 44.35 12.085 84.611 36.258 120.767 24.172 36.172 55.863 62.912 95.073 80.232-.762-20.365.476-37.209 3.709-50.532l28.267-119.348c-4.76-9.329-7.139-20.93-7.139-34.831 0-16.175 4.089-29.689 12.275-40.541 8.186-10.85 18.177-16.274 29.979-16.274 9.514 0 16.841 3.14 21.982 9.42 5.142 6.283 7.705 14.181 7.705 23.7 0 5.896-1.099 13.084-3.289 21.554-2.188 8.471-5.041 18.273-8.562 29.409-3.521 11.132-6.045 20.036-7.566 26.692-2.663 11.608-.476 21.553 6.567 29.838 7.042 8.278 16.372 12.423 27.983 12.423 20.365 0 37.065-11.324 50.107-33.972 13.038-22.655 19.554-50.159 19.554-82.514 0-24.938-8.042-45.21-24.129-60.813-16.085-15.609-38.496-23.417-67.239-23.417-32.161 0-58.192 10.327-78.082 30.978-19.891 20.654-29.836 45.352-29.836 74.091 0 17.132 4.854 31.505 14.56 43.112 3.235 3.806 4.283 7.898 3.14 12.279-.381 1.143-1.141 3.997-2.284 8.562-1.138 4.565-1.903 7.522-2.281 8.851-1.521 6.091-5.14 7.994-10.85 5.708-14.654-6.085-25.791-16.652-33.402-31.689-7.614-15.037-11.422-32.456-11.422-52.246 0-12.753 2.047-25.505 6.14-38.256 4.089-12.756 10.468-25.078 19.126-36.975 8.663-11.9 19.036-22.417 31.123-31.549 12.082-9.135 26.787-16.462 44.108-21.982s35.972-8.28 55.959-8.28c27.032 0 51.295 5.995 72.8 17.986 21.512 11.992 37.925 27.502 49.252 46.537 11.327 19.036 16.987 39.403 16.987 61.101 0 28.549-4.948 54.243-14.842 77.086-9.896 22.839-23.887 40.778-41.973 53.813-18.083 13.042-38.637 19.561-61.675 19.561-11.607 0-22.456-2.714-32.548-8.135-10.085-5.427-17.034-11.847-20.839-19.273-8.566 33.685-13.706 53.77-15.42 60.24-3.616 13.508-11.038 29.119-22.27 46.819 20.367 6.091 41.112 9.13 62.24 9.13 39.781 0 76.47-9.801 110.062-29.41 33.595-19.602 60.192-46.199 79.794-79.791 19.606-33.599 29.407-70.287 29.407-110.065.01-39.778-9.777-76.468-29.376-110.06z"
+                                        fill="#fff" opacity="1" data-original="#fff"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="instagram-Konto link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0"
+                                        fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                    <path
+                                        d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0"
+                                        fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="whats cooking link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M471.383 44.578C444.879 15.832 408.512 0 368.973 0c-29.555 0-56.621 9.344-80.45 27.77C276.5 37.07 265.605 48.45 256 61.73c-9.602-13.277-20.5-24.66-32.527-33.96C199.648 9.344 172.582 0 143.027 0c-39.539 0-75.91 15.832-102.414 44.578C14.426 72.988 0 111.801 0 153.871c0 43.3 16.137 82.938 50.781 124.742 30.992 37.395 75.535 75.356 127.117 119.313 17.614 15.012 37.579 32.027 58.309 50.152A30.023 30.023 0 0 0 256 455.516c7.285 0 14.316-2.641 19.785-7.43 20.73-18.129 40.707-35.152 58.328-50.172 51.575-43.95 96.117-81.906 127.11-119.305C495.867 236.81 512 197.172 512 153.867c0-42.066-14.426-80.879-40.617-109.289zm0 0"
+                                        fill="#fff" opacity="1" data-original="#fff"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="vimeo-Konto link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 176 176" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <g data-name="Layer 2">
+                                        <path
+                                            d="M159.67 0H16.33A16.33 16.33 0 0 0 0 16.33v143.34A16.33 16.33 0 0 0 16.33 176h143.34A16.33 16.33 0 0 0 176 159.67V16.33A16.33 16.33 0 0 0 159.67 0zM143 64.49c-.47 10.37-7.87 24.62-21.68 42.59C107.86 124.53 97.12 133.12 88 135a18.75 18.75 0 0 1-3.68.37c-9.47 0-18.69-26.52-24.77-48.78-3.18-11.46-5.86-16.27-8.94-16.12-2.84.09-6.61 2.76-10.61 5.59l-.12.1a2.93 2.93 0 0 1-4-.6l-2.28-2.94a3 3 0 0 1 .4-4L35.91 67C48.2 56.29 63.17 44 69.88 44c8.81 0 10.17 4.82 12.88 14.41.13.46 2.53 11.07 5.24 21.62s5.76 21.17 7.07 21.17c.79 0 3.53-3.5 8.48-11.27 4.07-6.4 7.35-12.43 8-14.69.75-2.67.62-4.72-.42-6.08-1.35-1.75-4.06-2.16-6.13-2.16a17.48 17.48 0 0 0-4.67.66 2.24 2.24 0 0 1-2.69-2.94c5.5-15.07 15.36-22.5 29.31-22 4.94.15 8.79 1.67 11.45 4.55 3.39 3.59 4.91 9.39 4.6 17.22z"
+                                            data-name="06.vimeo" fill="#fff" opacity="1" data-original="#fff" class="">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p class="font-hind">
+                    Westermann+Buroh Studios © <span id="current_year">2026</span> <br>
+                    All rights reserved
+                </p>
+            </div>
+        </aside>
+        <div id="main-content" class="w-full not-md:pt-85 md:pl-265 grow font-hind">
+            <section class="text-white text-center">
+                <div class="py-35 sm:py-70 xl:pt-140 bg-green">
+                    <h1 class="text-29 font-bold uppercase font-poppins">
+                        Unser Team
+                    </h1>
+                    <hr class="divider w-90 border-b border-border mx-auto my-12 sm:my-25">
+                    <p class="text-lg">
+                        Die Mischung macht´s!
+                    </p>
+                </div>
+                <div class="swiper teamSwiper font-semibold bg-black text-center">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide group">
+                            <div class="img_wrapper relative aspect-[.74/1]">
+                                <img src="assets/images/team-img-1.webp" class="absolute inset-0 size-full" alt="">
+                                <div
+                                    class="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 bg-black/90 transition_slow">
+                                    <h2 class="text-xl">
+                                        Lio
+                                    </h2>
+                                    <p class="text-12">
+                                        Grafik
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="img_wrapper relative aspect-[.74/1]">
+                                <img src="assets/images/team-img-2.webp" class="absolute inset-0 size-full" alt="">
+                                <div
+                                    class="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 bg-black/90 transition_slow">
+                                    <h2 class="text-xl">
+                                        Natalie
+                                    </h2>
+                                    <p class="text-12">
+                                        Gesellin
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="img_wrapper relative aspect-[.74/1]">
+                                <img src="assets/images/team-img-3.webp" class="absolute inset-0 size-full" alt="">
+                                <div
+                                    class="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 bg-black/90 transition_slow">
+                                    <h2 class="text-xl">
+                                        Nikolai Buroh
+                                    </h2>
+                                    <p class="text-12">
+                                        Fotograf und Geschäftsführer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="img_wrapper relative aspect-[.74/1]">
+                                <img src="assets/images/team-img-4.webp" class="absolute inset-0 size-full" alt="">
+                                <div
+                                    class="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 bg-black/90 transition_slow">
+                                    <h2 class="text-xl">
+                                        Susanne Treptow
+                                    </h2>
+                                    <p class="text-12">
+                                        Studioleitung
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="img_wrapper relative aspect-[.74/1]">
+                                <img src="assets/images/team-img-5.webp" class="absolute inset-0 size-full" alt="">
+                                <div
+                                    class="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 bg-black/90 transition_slow">
+                                    <h2 class="text-xl">
+                                        Anna Brauns
+                                    </h2>
+                                    <p class="text-12">
+                                        Fotografin
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="img_wrapper relative aspect-[.74/1]">
+                                <img src="assets/images/team-img-6.webp" class="absolute inset-0 size-full" alt="">
+                                <div
+                                    class="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 bg-black/90 transition_slow">
+                                    <h2 class="text-xl">
+                                        Felix
+                                    </h2>
+                                    <p class="text-12">
+                                        Auszubildender
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="img_wrapper relative aspect-[.74/1]">
+                                <img src="assets/images/team-img-7.webp" class="absolute inset-0 size-full" alt="">
+                                <div
+                                    class="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 bg-black/90 transition_slow">
+                                    <h2 class="text-xl">
+                                        Jan-Peter Westermann
+                                    </h2>
+                                    <p class="text-12">
+                                        Fotograf und Geschäftsführer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="img_wrapper relative aspect-[.74/1]">
+                                <img src="assets/images/team-img-8.webp" class="absolute inset-0 size-full" alt="">
+                                <div
+                                    class="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 bg-black/90 transition_slow">
+                                    <h2 class="text-xl">
+                                        Karla
+                                    </h2>
+                                    <p class="text-12">
+                                        Gesellin
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="img_wrapper relative aspect-[.74/1]">
+                                <img src="assets/images/team-img-9.webp" class="absolute inset-0 size-full" alt="">
+                                <div
+                                    class="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 bg-black/90 transition_slow">
+                                    <h2 class="text-xl">
+                                        Leif
+                                    </h2>
+                                    <p class="text-12">
+                                        Auszubildender
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div
+                    class="mx-auto max-w-1200 py-40 sm:py-80 xl:py-144 px-16 sm:px-36 text-green space-y-36 xl:space-y-72">
+                    <h2 class="text-35 text-center font-semibold">
+                        Bilder sagen mehr als 1000 Worte! Und da ohnehin immer weniger Zeit zum Lesen zur Verfügung
+                        steht, steigt die Bedeutung von Bildern.
+                    </h2>
+                    <div class="grid xl:grid-cols-2 text-15 gap-18 xl:gap-36">
+                        <div class="flex flex-col gap-9 xl:gap-18">
+                            <p>
+                                Doch gegen die Flut derzeitiger Foodaufnahmen kann man sich nur mit Qualität
+                                durchsetzen. Qualität ist die gelungene Mischung aus Zeitgeist, Leidenschaft, Emotion,
+                                Handwerk und Geschmack. Und das Studio arbeitet täglich daran, für jede*n Kunden*in die
+                                richtige Mischung zu finden und ein passendes Konzept zu entwickeln. 55 Buchtitel,
+                                aktuell ca. 1.500 Packungen in Lebensmittelmärkten, jedes Jahr diverse Food-Magazine und
+                                Rezeptseiten im Web vertreten. 11 Restaurants werben für Ihre Rezepte mit Bildern aus
+                                diesem Studio. <br>
+                                Die Bilder von Jan-Peter Westermann und Nikolai Buroh sind global relevant. Mit
+                                Kreativität und Leidenschaft arbeiten beide am eigenen Weg zum richtigen Licht. Wenn
+                                aber die Anzahl der zu entwickelnden Motive oder die knappe Zeit es erfordert, spielen
+                                Jan und Nikolai das aus, was ihnen die lange Partnerschaft ermöglicht: <br>
+                                Team-Play an bis zu 5 Sets gleichzeitig! Das macht den beiden und ihrem Team so schnell
+                                keiner nach! Der Schwerpunkt der fotografischen Arbeiten der Westermann+Buroh Studios
+                                liegt in den Bereichen Foodfotografie, Still life und Reportage.
+                            </p>
+                            <p>
+                                Unterstützt werden die beiden „alten Hasen“ von ihren Auszubildenden Natalie Tillmann
+                                und Leif Kresken, sowie der Fotografin Anna Brauns - sie arbeitet nicht nur bei großen
+                                Produktionen mit, sondern erledigt auch eigenverantwortlich Aufträge der
+                                Westermann+Buroh Studios.
+                            </p>
+                            <p>
+                                Verantwortlich für die Organisation der Aufträge und erste Ansprechpartnerin für
+                                Kund*innen ist Susanne Treptow. Dank ihrer Hilfe bekommen die Fotograf*innen Zeit für
+                                das, unter das sie ihre Namen schreiben. Tatkräftig unterstützt von Olga Bartens de
+                                Westermann, die schon seit der ersten Stunde der Studios die Buchhaltung führt.
+                            </p>
+                            <p>
+                                Das Fotostudio bietet mit seinen 320 Quadratmetern genügend Fläche für Kreativität und
+                                professionelle Arbeitsabläufe. Die Küchen, mit Kühlraum und kurzen Wegen zu den Sets
+                                (mit und ohne Oberlicht!) sind mittig positioniert. Im eigenen Garten können
+                                Außenproduktionen verwirklicht werden. An sonnigen Tagen rückt die Terrasse, als Oase
+                                der Räumlichkeiten, vor allem zum gemeinsamen Mittagessen in den
+                                Kommunikations-Mittelpunkt: Hier trifft sich das gesamte Team.
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-18">
+                            <p>
+                                Gemeinsam mit den besten freien Foodstylist*innen und Stylist*innen haben die
+                                renommierten und über die Grenzen Deutschlands hinaus bekannten Westermann+Buroh Studios
+                                bereits zahlreiche Aufträge für Industriekunden von „Amecke“ und „BurgerKing“, bis
+                                „Unilever“ und „Zimbo“ erfolgreich umgesetzt. Als Spezialisten ihres Fachs haben sie
+                                unter anderem für große Buchverlage wie „Gräfe und Unzer“ und ZS Bilder erschaffen. Und
+                                auch namhafte Magazine von „Burda“, „Gruner&Jahr“ und dem „Jahreszeitenverlag“ haben von
+                                der Erfahrung der Fotografen profitiert. Nicht nur Postproduktion, Retusche und
+                                Composing wird in diesem Team übernommen. Sondern auch die grafische Gestaltung von
+                                Flyern oder Büchern (zB. Mälzer, Born to Cook 2) kann und wird durch freie
+                                Grafiker*innen im Studio geleistet.
+                            </p>
+                            <p>
+                                Und als wäre dies alles noch nicht genug:
+                                Dieses Fotostudio shooted nicht nur Rezepte, sondern es wird „Essen“ als gemeinsames
+                                Thema gelebt. Beim Essen wird über neue Foodtrends gesprochen, Restaurants getestet und
+                                auch privat mit Liebe gekocht. Die eingangs erwähnte Leidenschaft freie Produktionen
+                                zeigen zu wollen und sich fotografisch neu probieren zu können, sorgte dafür, dass das
+                                gesamte Team seit Mai 2016 den Food-Blog „Whats-Cooking.com“ mit regelmäßigen Posts
+                                versorgt.
+                            </p>
+                            <p>
+                                „Auf diese Weise sich selbst, wie auch die Mitarbeiter*innen zu motivieren, ist wohl das
+                                Geheimnis, das dieses Studio so lebendig und leistungsfähig macht!“
+                                (Andreas Knuffmann, Regisseur, Filmproduzent)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 xl:grid-cols-4 gap-18 sm:gap-36 font-medium text-center">
+                        <div class="flex flex-col">
+                            <span class="text-35">
+                                <span class="counter" data-target="24">24</span>
+                            </span>
+                            <span class="text-15 font-semibold">
+                                redaktionelle Publikationen pro Jahr
+                            </span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-35">
+                                ~<span class="counter" data-target="1.500">1.500</span>
+                            </span>
+                            <span class="text-15 font-semibold">
+                                Packungen pro Jahr
+                            </span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-35">
+                                <span class="counter" data-target="42">42</span>
+                            </span>
+                            <span class="text-15 font-semibold">
+                                Buchtitel
+                            </span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-35">
+                                <span class="counter" data-target="22">22</span>
+                            </span>
+                            <span class="text-15 font-semibold">
+                                CP Publikationen pro Jah
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-green text-white py-40 xl:py-80 2xl:py-144 px-36">
+                <div class="max-w-1200 mx-auto">
+                    <div class="services grid sm:grid-cols-2 xl:grid-cols-3 gap-36 xl:gap-72 overflow-hidden">
+                        <div class="service flex gap-18 2xl:gap-36 relative">
+                            <a href="index.html" class="absolute inset-0"><span class="sr-only">Food
+                                    Fotografiex</span></a>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-camera-icon lucide-camera">
+                                    <path
+                                        d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z" />
+                                    <circle cx="12" cy="13" r="3" />
+                                </svg>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-17 font-semibold">
+                                    Food Fotografiex
+                                </h3>
+                                <p class="text-15">
+                                    Food Fotografie auf höchsten Niveau
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service flex gap-18 2xl:gap-36 relative">
+                            <a href="reportage.html" class="absolute inset-0"><span class="sr-only">Reportage
+                                    Fotografie</span></a>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-earth-icon lucide-earth">
+                                    <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
+                                    <path
+                                        d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" />
+                                    <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-17 font-semibold">
+                                    Reportage Fotografie
+                                </h3>
+                                <p class="text-15">
+                                    Überall zu jeder Zeit
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service flex gap-18 2xl:gap-36 relative">
+                            <a href="werbung.html" class="absolute inset-0"><span class="sr-only">Werbe
+                                    Fotografie</span></a>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-send-icon lucide-send">
+                                    <path
+                                        d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+                                    <path d="m21.854 2.147-10.94 10.939" />
+                                </svg>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-17 font-semibold">
+                                    Werbe Fotografie
+                                </h3>
+                                <p class="text-15">
+                                    Das richtige Bild am richtigen Ort
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service flex gap-18 2xl:gap-36 relative">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-drone-icon lucide-drone">
+                                    <path d="M10 10 7 7" />
+                                    <path d="m10 14-3 3" />
+                                    <path d="m14 10 3-3" />
+                                    <path d="m14 14 3 3" />
+                                    <path d="M14.205 4.139a4 4 0 1 1 5.439 5.863" />
+                                    <path d="M19.637 14a4 4 0 1 1-5.432 5.868" />
+                                    <path d="M4.367 10a4 4 0 1 1 5.438-5.862" />
+                                    <path d="M9.795 19.862a4 4 0 1 1-5.429-5.873" />
+                                    <rect x="10" y="8" width="4" height="8" rx="1" />
+                                </svg>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-17 font-semibold">
+                                    Drohnen Fotografie
+                                </h3>
+                                <p class="text-15">
+                                    Ungeahnte Perspektiven
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service flex gap-18 2xl:gap-36 relative">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-pencil-ruler-icon lucide-pencil-ruler">
+                                    <path d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13" />
+                                    <path d="m8 6 2-2" />
+                                    <path d="m18 16 2-2" />
+                                    <path
+                                        d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17" />
+                                    <path
+                                        d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+                                    <path d="m15 5 4 4" />
+                                </svg>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-17 font-semibold">
+                                    Grafik Design
+                                </h3>
+                                <p class="text-15">
+                                    Auch gestalten können wir
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service flex gap-18 2xl:gap-36 relative">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-image-icon lucide-image">
+                                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                                    <circle cx="9" cy="9" r="2" />
+                                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+                                </svg>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-17 font-semibold">
+                                    Postproduction
+                                </h3>
+                                <p class="text-15">
+                                    Retusche fängt an, wo die Kamera aufhört
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <button id="scrollTopBtn"
+        class="fixed opacity-0 bottom-20 right-20 bg-green text-white shadow-[2px_2px_0_0_#fff] size-40 grid place-items-center z-50 hover:shadow-none transition_slow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-arrow-up-icon lucide-arrow-up">
+            <path d="m5 12 7-7 7 7" />
+            <path d="M12 19V5" />
+        </svg>
+    </button>
+
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/ScrollTrigger.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/fancybox.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

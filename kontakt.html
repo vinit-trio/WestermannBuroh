@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
+
+    <title>Westermann+Buroh Studios | Food-Fotografie Hamburg</title>
+
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/fancybox.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-green focus:text-white focus:p-5 focus:z-99999">
+        Skip to content
+    </a>
+    <div class="flex h-screen">
+        <header id="header"
+            class="fixed bg-green z-50 inset-0 bottom-auto md:hidden text-white p-5 px-25 text-center text-12 gap-54 tracking-wider overflow-y-auto">
+            <div class="flex items-center justify-between">
+                <a href="index.html" aria-label="westermann-buroh">
+                    <img src="assets/images/logo.jpg" alt="westermann-buroh" class="w-75">
+                </a>
+                <button id="nav-icon" aria-expanded="false" aria-controls="mobile_menu"
+                    aria-label="Navigation umschalten">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <div class="z-50 fixed bg-green text-white inset-0 top-85 text-12" id="mobile_menu" aria-hidden="true" inert>
+            <div class="p-15 h-full flex flex-col gap-54 px-35 overflow-y-auto">
+                <nav class="uppercase font-bold flex flex-col gap-40">
+                    <ul class="flex flex-col gap-20">
+                        <li>
+                            <a class="inline-block" href="food.html">Food</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="reportage.html">Reportage</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="werbung.html">Werbung</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="portrait.html">Portrait</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="uber-uns.html">Über Uns</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                    <ul class="flex flex-col gap-20">
+                        <li>
+                            <a class="inline-block" href="https://www.whats-cooking.com/" target="_blank">Foodblog</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="impressum.html">Impressum</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex flex-col gap-54">
+                    <ul class="flex gap-14">
+                        <li>
+                            <a href="https://www.facebook.com/WestermannBuroh/" aria-label="Facebook-Konto link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="">
+                                    <g>
+                                        <path
+                                            d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"
+                                            fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com/whatscooking0/" aria-label="pinterest-Konto link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 438.529 438.529" style="enable-background:new 0 0 512 512"
+                                    xml:space="preserve" class="">
+                                    <g>
+                                        <path
+                                            d="M409.141 109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.751 9.801 259.065 0 219.281 0 179.5 0 142.812 9.801 109.22 29.407c-33.597 19.604-60.194 46.201-79.8 79.796C9.809 142.8.008 179.485.008 219.267c0 44.35 12.085 84.611 36.258 120.767 24.172 36.172 55.863 62.912 95.073 80.232-.762-20.365.476-37.209 3.709-50.532l28.267-119.348c-4.76-9.329-7.139-20.93-7.139-34.831 0-16.175 4.089-29.689 12.275-40.541 8.186-10.85 18.177-16.274 29.979-16.274 9.514 0 16.841 3.14 21.982 9.42 5.142 6.283 7.705 14.181 7.705 23.7 0 5.896-1.099 13.084-3.289 21.554-2.188 8.471-5.041 18.273-8.562 29.409-3.521 11.132-6.045 20.036-7.566 26.692-2.663 11.608-.476 21.553 6.567 29.838 7.042 8.278 16.372 12.423 27.983 12.423 20.365 0 37.065-11.324 50.107-33.972 13.038-22.655 19.554-50.159 19.554-82.514 0-24.938-8.042-45.21-24.129-60.813-16.085-15.609-38.496-23.417-67.239-23.417-32.161 0-58.192 10.327-78.082 30.978-19.891 20.654-29.836 45.352-29.836 74.091 0 17.132 4.854 31.505 14.56 43.112 3.235 3.806 4.283 7.898 3.14 12.279-.381 1.143-1.141 3.997-2.284 8.562-1.138 4.565-1.903 7.522-2.281 8.851-1.521 6.091-5.14 7.994-10.85 5.708-14.654-6.085-25.791-16.652-33.402-31.689-7.614-15.037-11.422-32.456-11.422-52.246 0-12.753 2.047-25.505 6.14-38.256 4.089-12.756 10.468-25.078 19.126-36.975 8.663-11.9 19.036-22.417 31.123-31.549 12.082-9.135 26.787-16.462 44.108-21.982s35.972-8.28 55.959-8.28c27.032 0 51.295 5.995 72.8 17.986 21.512 11.992 37.925 27.502 49.252 46.537 11.327 19.036 16.987 39.403 16.987 61.101 0 28.549-4.948 54.243-14.842 77.086-9.896 22.839-23.887 40.778-41.973 53.813-18.083 13.042-38.637 19.561-61.675 19.561-11.607 0-22.456-2.714-32.548-8.135-10.085-5.427-17.034-11.847-20.839-19.273-8.566 33.685-13.706 53.77-15.42 60.24-3.616 13.508-11.038 29.119-22.27 46.819 20.367 6.091 41.112 9.13 62.24 9.13 39.781 0 76.47-9.801 110.062-29.41 33.595-19.602 60.192-46.199 79.794-79.791 19.606-33.599 29.407-70.287 29.407-110.065.01-39.778-9.777-76.468-29.376-110.06z"
+                                            fill="#fff" opacity="1" data-original="#fff"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com/whatscookingdotcom" aria-label="instagram-Konto link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512"
+                                    xml:space="preserve" class="">
+                                    <g>
+                                        <path
+                                            d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0"
+                                            fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                        <path
+                                            d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0"
+                                            fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://whats-cooking.com/" aria-label="whats cooking link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="">
+                                    <g>
+                                        <path
+                                            d="M471.383 44.578C444.879 15.832 408.512 0 368.973 0c-29.555 0-56.621 9.344-80.45 27.77C276.5 37.07 265.605 48.45 256 61.73c-9.602-13.277-20.5-24.66-32.527-33.96C199.648 9.344 172.582 0 143.027 0c-39.539 0-75.91 15.832-102.414 44.578C14.426 72.988 0 111.801 0 153.871c0 43.3 16.137 82.938 50.781 124.742 30.992 37.395 75.535 75.356 127.117 119.313 17.614 15.012 37.579 32.027 58.309 50.152A30.023 30.023 0 0 0 256 455.516c7.285 0 14.316-2.641 19.785-7.43 20.73-18.129 40.707-35.152 58.328-50.172 51.575-43.95 96.117-81.906 127.11-119.305C495.867 236.81 512 197.172 512 153.867c0-42.066-14.426-80.879-40.617-109.289zm0 0"
+                                            fill="#fff" opacity="1" data-original="#fff"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://vimeo.com/user53421412" aria-label="vimeo-Konto link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 176 176" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="">
+                                    <g>
+                                        <g data-name="Layer 2">
+                                            <path
+                                                d="M159.67 0H16.33A16.33 16.33 0 0 0 0 16.33v143.34A16.33 16.33 0 0 0 16.33 176h143.34A16.33 16.33 0 0 0 176 159.67V16.33A16.33 16.33 0 0 0 159.67 0zM143 64.49c-.47 10.37-7.87 24.62-21.68 42.59C107.86 124.53 97.12 133.12 88 135a18.75 18.75 0 0 1-3.68.37c-9.47 0-18.69-26.52-24.77-48.78-3.18-11.46-5.86-16.27-8.94-16.12-2.84.09-6.61 2.76-10.61 5.59l-.12.1a2.93 2.93 0 0 1-4-.6l-2.28-2.94a3 3 0 0 1 .4-4L35.91 67C48.2 56.29 63.17 44 69.88 44c8.81 0 10.17 4.82 12.88 14.41.13.46 2.53 11.07 5.24 21.62s5.76 21.17 7.07 21.17c.79 0 3.53-3.5 8.48-11.27 4.07-6.4 7.35-12.43 8-14.69.75-2.67.62-4.72-.42-6.08-1.35-1.75-4.06-2.16-6.13-2.16a17.48 17.48 0 0 0-4.67.66 2.24 2.24 0 0 1-2.69-2.94c5.5-15.07 15.36-22.5 29.31-22 4.94.15 8.79 1.67 11.45 4.55 3.39 3.59 4.91 9.39 4.6 17.22z"
+                                                data-name="06.vimeo" fill="#fff" opacity="1" data-original="#fff"
+                                                class=""></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <aside
+            class="fixed inset-0 right-auto z-50 bg-green hidden md:flex w-full min-w-265 max-w-265 text-white py-36 px-45 flex-col justify-between items-center text-center text-12 gap-54 tracking-wider overflow-y-auto">
+            <a href="index.html" aria-label="westermann-buroh">
+                <img src="assets/images/logo.jpg" alt="westermann-buroh" class="w-75">
+            </a>
+            <nav class="uppercase font-bold flex flex-col gap-40">
+                <ul class="flex flex-col gap-10">
+                    <li>
+                        <a class="block" href="food.html">Food</a>
+                    </li>
+                    <li>
+                        <a class="block" href="reportage.html">Reportage</a>
+                    </li>
+                    <li>
+                        <a class="block" href="werbung.html">Werbung</a>
+                    </li>
+                    <li>
+                        <a class="block" href="portrait.html">Portrait</a>
+                    </li>
+                    <li>
+                        <a class="block" href="uber-uns.html">Über Uns</a>
+                    </li>
+                    <li>
+                        <a class="block" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col gap-10">
+                    <li>
+                        <a class="block" href="https://www.whats-cooking.com/" target="_blank">Foodblog</a>
+                    </li>
+                    <li>
+                        <a class="block" href="impressum.html">Impressum</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex flex-col gap-54">
+                <ul class="flex gap-14 justify-center">
+                    <li>
+                        <a href="#" aria-label="Facebook-Konto link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"
+                                        fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="pinterest-Konto link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 438.529 438.529" style="enable-background:new 0 0 512 512"
+                                xml:space="preserve" class="">
+                                <g>
+                                    <path
+                                        d="M409.141 109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.751 9.801 259.065 0 219.281 0 179.5 0 142.812 9.801 109.22 29.407c-33.597 19.604-60.194 46.201-79.8 79.796C9.809 142.8.008 179.485.008 219.267c0 44.35 12.085 84.611 36.258 120.767 24.172 36.172 55.863 62.912 95.073 80.232-.762-20.365.476-37.209 3.709-50.532l28.267-119.348c-4.76-9.329-7.139-20.93-7.139-34.831 0-16.175 4.089-29.689 12.275-40.541 8.186-10.85 18.177-16.274 29.979-16.274 9.514 0 16.841 3.14 21.982 9.42 5.142 6.283 7.705 14.181 7.705 23.7 0 5.896-1.099 13.084-3.289 21.554-2.188 8.471-5.041 18.273-8.562 29.409-3.521 11.132-6.045 20.036-7.566 26.692-2.663 11.608-.476 21.553 6.567 29.838 7.042 8.278 16.372 12.423 27.983 12.423 20.365 0 37.065-11.324 50.107-33.972 13.038-22.655 19.554-50.159 19.554-82.514 0-24.938-8.042-45.21-24.129-60.813-16.085-15.609-38.496-23.417-67.239-23.417-32.161 0-58.192 10.327-78.082 30.978-19.891 20.654-29.836 45.352-29.836 74.091 0 17.132 4.854 31.505 14.56 43.112 3.235 3.806 4.283 7.898 3.14 12.279-.381 1.143-1.141 3.997-2.284 8.562-1.138 4.565-1.903 7.522-2.281 8.851-1.521 6.091-5.14 7.994-10.85 5.708-14.654-6.085-25.791-16.652-33.402-31.689-7.614-15.037-11.422-32.456-11.422-52.246 0-12.753 2.047-25.505 6.14-38.256 4.089-12.756 10.468-25.078 19.126-36.975 8.663-11.9 19.036-22.417 31.123-31.549 12.082-9.135 26.787-16.462 44.108-21.982s35.972-8.28 55.959-8.28c27.032 0 51.295 5.995 72.8 17.986 21.512 11.992 37.925 27.502 49.252 46.537 11.327 19.036 16.987 39.403 16.987 61.101 0 28.549-4.948 54.243-14.842 77.086-9.896 22.839-23.887 40.778-41.973 53.813-18.083 13.042-38.637 19.561-61.675 19.561-11.607 0-22.456-2.714-32.548-8.135-10.085-5.427-17.034-11.847-20.839-19.273-8.566 33.685-13.706 53.77-15.42 60.24-3.616 13.508-11.038 29.119-22.27 46.819 20.367 6.091 41.112 9.13 62.24 9.13 39.781 0 76.47-9.801 110.062-29.41 33.595-19.602 60.192-46.199 79.794-79.791 19.606-33.599 29.407-70.287 29.407-110.065.01-39.778-9.777-76.468-29.376-110.06z"
+                                        fill="#fff" opacity="1" data-original="#fff"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="instagram-Konto link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0"
+                                        fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                    <path
+                                        d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0"
+                                        fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="whats cooking link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M471.383 44.578C444.879 15.832 408.512 0 368.973 0c-29.555 0-56.621 9.344-80.45 27.77C276.5 37.07 265.605 48.45 256 61.73c-9.602-13.277-20.5-24.66-32.527-33.96C199.648 9.344 172.582 0 143.027 0c-39.539 0-75.91 15.832-102.414 44.578C14.426 72.988 0 111.801 0 153.871c0 43.3 16.137 82.938 50.781 124.742 30.992 37.395 75.535 75.356 127.117 119.313 17.614 15.012 37.579 32.027 58.309 50.152A30.023 30.023 0 0 0 256 455.516c7.285 0 14.316-2.641 19.785-7.43 20.73-18.129 40.707-35.152 58.328-50.172 51.575-43.95 96.117-81.906 127.11-119.305C495.867 236.81 512 197.172 512 153.867c0-42.066-14.426-80.879-40.617-109.289zm0 0"
+                                        fill="#fff" opacity="1" data-original="#fff"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="vimeo-Konto link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 176 176" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <g data-name="Layer 2">
+                                        <path
+                                            d="M159.67 0H16.33A16.33 16.33 0 0 0 0 16.33v143.34A16.33 16.33 0 0 0 16.33 176h143.34A16.33 16.33 0 0 0 176 159.67V16.33A16.33 16.33 0 0 0 159.67 0zM143 64.49c-.47 10.37-7.87 24.62-21.68 42.59C107.86 124.53 97.12 133.12 88 135a18.75 18.75 0 0 1-3.68.37c-9.47 0-18.69-26.52-24.77-48.78-3.18-11.46-5.86-16.27-8.94-16.12-2.84.09-6.61 2.76-10.61 5.59l-.12.1a2.93 2.93 0 0 1-4-.6l-2.28-2.94a3 3 0 0 1 .4-4L35.91 67C48.2 56.29 63.17 44 69.88 44c8.81 0 10.17 4.82 12.88 14.41.13.46 2.53 11.07 5.24 21.62s5.76 21.17 7.07 21.17c.79 0 3.53-3.5 8.48-11.27 4.07-6.4 7.35-12.43 8-14.69.75-2.67.62-4.72-.42-6.08-1.35-1.75-4.06-2.16-6.13-2.16a17.48 17.48 0 0 0-4.67.66 2.24 2.24 0 0 1-2.69-2.94c5.5-15.07 15.36-22.5 29.31-22 4.94.15 8.79 1.67 11.45 4.55 3.39 3.59 4.91 9.39 4.6 17.22z"
+                                            data-name="06.vimeo" fill="#fff" opacity="1" data-original="#fff" class="">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p class="font-hind">
+                    Westermann+Buroh Studios © <span id="current_year">2026</span> <br>
+                    All rights reserved
+                </p>
+            </div>
+        </aside>
+        <div id="main-content" class="w-full not-md:pt-85 md:pl-265 grow font-hind">
+            <section>
+                <div class="swiper kontaktSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img_wrapper aspect-[2.1/1] relative">
+                                <img src="assets/images/kontakt-slider-1.webp"
+                                    class="absolute inset-0 size-full object-cover" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_wrapper aspect-[2.1/1] relative">
+                                <img src="assets/images/kontakt-slider-2.webp"
+                                    class="absolute inset-0 size-full object-cover" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section>
+                <div class="max-w-1400 mx-auto">
+                    <div
+                        class="contact_links grid xl:grid-cols-3 gap-36 pt-40 lg:pt-80 xl:pt-144 px-16 md:px-36 pb-72 text-center text-green">
+                        <div class="link flex flex-col items-center gap-9">
+                            <div
+                                class="bg-green rounded-full p-15 xl:p-30 border border-green text-white hover:bg-white hover:text-green transition_slow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-30 xl:w-45 lucide lucide-mail-icon lucide-mail">
+                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                </svg>
+                            </div>
+                            <h2 class="text-17 mt-18 font-semibold">
+                                Schickt uns eine Mail
+                            </h2>
+                            <p class="text-15">
+                                Wir freuen uns über Anfragen, <br>
+                                Anregungen und Inspiration jeder Art.
+                            </p>
+                            <a href="mailto:mail@westermann-buroh.de"
+                                class="inline-block mt-9 font-semibold uppercase text-12 tracking-widest font-poppins">
+                                mail@westermann-buroh.de
+                            </a>
+                        </div>
+                        <div class="link flex flex-col items-center gap-9">
+                            <div
+                                class="bg-green rounded-full p-15 xl:p-30 border border-green text-white hover:bg-white hover:text-green transition_slow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-30 xl:w-45 lucide lucide-phone-icon lucide-phone">
+                                    <path
+                                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                                </svg>
+                            </div>
+                            <h2 class="text-17 mt-18 font-semibold">
+                                Ruft uns an
+                            </h2>
+                            <p class="text-15">
+                                Ein Schnack am Morgen, <br>
+                                vertreibt Kummer und Sorgen.
+                            </p>
+                            <a href="tel:+49402996511"
+                                class="inline-block mt-9 font-semibold uppercase text-12 tracking-widest font-poppins">
+                                + 49 (0)40 2996511
+                            </a>
+                        </div>
+                        <div class="link flex flex-col items-center gap-9">
+                            <div
+                                class="bg-green rounded-full p-15 xl:p-30 border border-green text-white hover:bg-white hover:text-green transition_slow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-30 xl:w-45 lucide lucide-map-pin-icon lucide-map-pin">
+                                    <path
+                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <h2 class="text-17 mt-18 font-semibold">
+                                Kommt vorbei!
+                            </h2>
+                            <p class="text-15">
+                                Papenreye 34 <br>
+                                22453 Hamburg
+                            </p>
+                            <a href="https://www.google.de/maps/place/Westermann%2BBuroh+Studios+GbR/@53.611059,9.969325,15z/data=!4m5!3m4!1s0x0:0x243a9db6833b047c!8m2!3d53.611059!4d9.969325"
+                                target="_blank"
+                                class="inline-block mt-9 font-semibold uppercase text-12 tracking-widest font-poppins">
+                                Anfahrt
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9468.054614824296!2d9.969325!3d53.611059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b1889c71c4718d%3A0x243a9db6833b047c!2sWestermann%2BBuroh%20Studios%20GbR!5e0!3m2!1sen!2sin!4v1773825930354!5m2!1sen!2sin"
+                    style="border:0;" allowfullscreen="" loading="lazy" class="w-full aspect-[2.3/1]"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="p-16 sm:p-36 pb-40 lg:pb-80 xl:pb-144 text-center text-green">
+                <div class="max-w-996 mx-auto">
+                    <h1 class="text-35 uppercase font-bold">
+                        Was ist Ihr nächstes Projekt?
+                    </h1>
+                    <hr class="w-90 border border-border mt-14 xl:mt-27 mb-18 xl:mb-36 mx-auto">
+                    <p class="text-15">
+                        Wir begleiten Sie von Anfang bis Ende.
+                    </p>
+                    <form class="mt-36 xl:mt-72 flex flex-col gap-18">
+                        <div class="input-group flex flex-col gap-9">
+                            <label for="name" class="text-15 font-semibold">
+                                Your Name (required)
+                            </label>
+                            <input type="text" name="name" id="name"
+                                class="border border-border bg-gray py-10 px-15 w-full max-w-350 mx-auto" required
+                                autocomplete="name">
+                        </div>
+                        <div class="input-group flex flex-col gap-9">
+                            <label for="email" class="text-15 font-semibold">
+                                Your Email (required)
+                            </label>
+                            <input type="text" name="email" id="email"
+                                class="border border-border bg-gray py-10 px-15 w-full max-w-350 mx-auto" required
+                                autocomplete="email">
+                        </div>
+                        <div class="input-group flex flex-col gap-9">
+                            <label for="subject" class="text-15 font-semibold">
+                                Subject
+                            </label>
+                            <input type="text" name="subject" id="subject"
+                                class="border border-border bg-gray py-10 px-15 w-full max-w-350 mx-auto">
+                        </div>
+                        <div class="input-group flex flex-col gap-9">
+                            <label for="message" class="text-15 font-semibold">
+                                Your Message
+                            </label>
+                            <textarea type="text" name="message" id="message"
+                                class="border border-border bg-gray py-10 px-15 w-full mx-auto" rows="10"></textarea>
+                        </div>
+                        <button
+                            class="border border-border w-fit mx-auto py-13 px-31 uppercase text-12 font-semibold font-poppins tracking-wider cursor-pointer bg-gray">
+                            send
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <section class="social_media bg-green p-36 xl:p-72">
+                <ul class="flex gap-9 xl:gap-18 justify-center">
+                    <li class="link">
+                        <a target="_blank" href="https://www.facebook.com/WestermannBuroh/"
+                            class="bg-white size-50 xl:size-75 border text-green border-white hover:bg-transparent transition_slow hover:text-white grid place-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24" x="0" y="0"
+                                viewBox="0 0 155.139 155.139" style="enable-background:new 0 0 512 512"
+                                xml:space="preserve" class="">
+                                <g>
+                                    <path
+                                        d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
+                                        fill="currentColor" data-original="currentColor"></path>
+                                </g>
+                            </svg>
+                            <span class="sr-only">Facebook-Konto</span>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a target="_blank" href="https://vimeo.com/user53421412"
+                            class="bg-white size-50 xl:size-75 border text-green border-white hover:bg-transparent transition_slow hover:text-white grid place-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24" x="0" y="0"
+                                viewBox="0 0 512.011 512.011" style="enable-background:new 0 0 512 512"
+                                xml:space="preserve" class="">
+                                <g>
+                                    <path
+                                        d="M293.792 152.808c58.304-35.008 89.728 14.336 59.84 70.112-29.952 56-57.44 92.512-71.68 92.512-13.984 0-25.056-37.568-41.44-102.784-16.8-67.552-16.8-189.344-87.072-175.52C87.008 50.248 0 154.248 0 154.248l20.672 27.232s42.88-33.824 57.152-16.992c14.464 16.992 69.216 221.024 87.328 258.752 15.808 33.056 59.68 76.672 107.616 45.568 48.384-31.296 208.096-167.68 236.704-329.056 28.544-161.088-192.512-127.36-215.68 13.056z"
+                                        fill="currentColor" opacity="1" data-original="currentColor"></path>
+                                </g>
+                            </svg>
+                            <span class="sr-only">vimeo-Konto</span>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a target="_blank" href="http://www.whats-cooking.com/"
+                            class="bg-white size-50 xl:size-75 border text-green border-white hover:bg-transparent transition_slow hover:text-white grid place-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="33" x="0" y="0"
+                                viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="m98.023 17.465-19.584-.056c-.004.711-.006 1.563-.017 2.121 1.664.039 5.922.822 7.257 4.327L66.92 67.155c-.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863 5.455-4.709 8.918-4.843l-.01-1.968-18.841-.017c-.045.499.001 1.548-.068 2.069 5.315.144 7.215 1.334 5.941 4.508-2.102 4.776-6.51 13.824-7.372 15.475-2.696-5.635-4.41-9.972-7.345-16.064-1.266-2.823 1.529-3.922 4.485-4.004v-1.981l-21.82-.067c.016.93-.021 1.451-.021 2.131 3.041.046 6.988.371 8.562 3.019 2.087 4.063 9.044 20.194 11.149 24.514-2.685 5.153-9.207 17.341-11.544 21.913-3.348-7.43-15.732-36.689-19.232-44.241-1.304-3.218 3.732-5.077 6.646-5.213l.019-2.148L0 17.398c.005.646.027 1.71.029 2.187 4.025-.037 9.908 6.573 11.588 10.683 7.244 16.811 14.719 33.524 21.928 50.349.002.029 2.256.059 2.281.008 4.717-9.653 10.229-19.797 15.206-29.56L63.588 80.64c.005.004 2.082.016 2.093.007 7.962-18.196 19.892-46.118 23.794-54.933 1.588-3.767 4.245-6.064 8.543-6.194l.032-1.956z"
+                                        fill="currentColor" opacity="1" data-original="currentColor"></path>
+                                </g>
+                            </svg>
+                            <span class="sr-only">www.whats-cooking.com</span>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a target="_blank" href="https://www.instagram.com/whatscookingdotcom/"
+                            class="bg-white size-50 xl:size-75 border text-green border-white hover:bg-transparent transition_slow hover:text-white grid place-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="26" x="0" y="0"
+                                viewBox="0 0 409.61 409.61" style="enable-background:new 0 0 512 512"
+                                xml:space="preserve" class="">
+                                <g>
+                                    <path
+                                        d="M307.205 0h-204.8C46.09 0 .005 46.085.005 102.4v204.81c0 56.3 46.085 102.4 102.4 102.4h204.8c56.315 0 102.4-46.1 102.4-102.4V102.4c0-56.315-46.085-102.4-102.4-102.4zm68.265 307.21c0 37.632-30.612 68.265-68.265 68.265h-204.8c-37.637 0-68.265-30.633-68.265-68.265V102.4c0-37.642 30.628-68.265 68.265-68.265h204.8c37.653 0 68.265 30.623 68.265 68.265v204.81z"
+                                        fill="currentColor" opacity="1" data-original="currentColor"></path>
+                                    <circle cx="315.755" cy="93.865" r="25.6" fill="currentColor" opacity="1"
+                                        data-original="currentColor"></circle>
+                                    <path
+                                        d="M204.805 102.4c-56.566 0-102.4 45.839-102.4 102.4 0 56.54 45.834 102.41 102.4 102.41 56.55 0 102.4-45.87 102.4-102.41 0-56.561-45.85-102.4-102.4-102.4zm0 170.675c-37.699 0-68.265-30.566-68.265-68.275s30.566-68.265 68.265-68.265 68.265 30.556 68.265 68.265-30.566 68.275-68.265 68.275z"
+                                        fill="currentColor" opacity="1" data-original="currentColor"></path>
+                                </g>
+                            </svg>
+                            <span class="sr-only">Instagram-Konto</span>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a target="_blank" href="https://de.pinterest.com/whatscookingcom/"
+                            class="bg-white size-50 xl:size-75 border text-green border-white hover:bg-transparent transition_slow hover:text-white grid place-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="26" x="0" y="0"
+                                viewBox="0 0 511.977 511.977" style="enable-background:new 0 0 512 512"
+                                xml:space="preserve" class="">
+                                <g>
+                                    <path
+                                        d="M262.948 0C122.628 0 48.004 89.92 48.004 187.968c0 45.472 25.408 102.176 66.08 120.16 6.176 2.784 9.536 1.6 10.912-4.128 1.216-4.352 6.56-25.312 9.152-35.2.8-3.168.384-5.92-2.176-8.896-13.504-15.616-24.224-44.064-24.224-70.752 0-68.384 54.368-134.784 146.88-134.784 80 0 135.968 51.968 135.968 126.304 0 84-44.448 142.112-102.208 142.112-31.968 0-55.776-25.088-48.224-56.128 9.12-36.96 27.008-76.704 27.008-103.36 0-23.904-13.504-43.68-41.088-43.68-32.544 0-58.944 32.224-58.944 75.488 0 27.488 9.728 46.048 9.728 46.048S144.676 371.2 138.692 395.488c-10.112 41.12 1.376 107.712 2.368 113.44.608 3.168 4.16 4.16 6.144 1.568 3.168-4.16 42.08-59.68 52.992-99.808 3.968-14.624 20.256-73.92 20.256-73.92 10.72 19.36 41.664 35.584 74.624 35.584 98.048 0 168.896-86.176 168.896-193.12C463.62 76.704 375.876 0 262.948 0z"
+                                        fill="currentColor" opacity="1" data-original="currentColor"></path>
+                                </g>
+                            </svg>
+                            <span class="sr-only">Pinterest-Konto</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <button id="scrollTopBtn"
+        class="fixed opacity-0 bottom-20 right-20 bg-green text-white shadow-[2px_2px_0_0_#fff] size-40 grid place-items-center z-50 hover:shadow-none transition_slow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-arrow-up-icon lucide-arrow-up">
+            <path d="m5 12 7-7 7 7" />
+            <path d="M12 19V5" />
+        </svg>
+    </button>
+
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/ScrollTrigger.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/fancybox.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

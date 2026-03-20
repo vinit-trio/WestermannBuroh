@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
+
+    <title>Westermann+Buroh Studios | Food-Fotografie Hamburg</title>
+
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/fancybox.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-green">
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-green focus:text-white focus:p-5 focus:z-99999">
+        Skip to content
+    </a>
+    <div class="flex h-screen">
+        <header id="header"
+            class="fixed bg-green z-50 inset-0 bottom-auto md:hidden text-white p-5 px-25 text-center text-12 gap-54 tracking-wider overflow-y-auto">
+            <div class="flex items-center justify-between">
+                <a href="index.html" aria-label="westermann-buroh">
+                    <img src="assets/images/logo.jpg" alt="westermann-buroh" class="w-75">
+                </a>
+                <button id="nav-icon" aria-expanded="false" aria-controls="mobile_menu"
+                    aria-label="Navigation umschalten">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <div class="z-50 fixed bg-green text-white inset-0 top-85 text-12" id="mobile_menu" aria-hidden="true" inert>
+            <div class="p-15 h-full flex flex-col gap-54 px-35 overflow-y-auto">
+                <nav class="uppercase font-bold flex flex-col gap-40">
+                    <ul class="flex flex-col gap-20">
+                        <li>
+                            <a class="inline-block" href="food.html">Food</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="reportage.html">Reportage</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="werbung.html">Werbung</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="portrait.html">Portrait</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="uber-uns.html">Über Uns</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                    <ul class="flex flex-col gap-20">
+                        <li>
+                            <a class="inline-block" href="https://www.whats-cooking.com/" target="_blank">Foodblog</a>
+                        </li>
+                        <li>
+                            <a class="inline-block" href="impressum.html">Impressum</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex flex-col gap-54">
+                    <ul class="flex gap-14">
+                        <li>
+                            <a href="https://www.facebook.com/WestermannBuroh/" aria-label="Facebook-Konto link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="">
+                                    <g>
+                                        <path
+                                            d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"
+                                            fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com/whatscooking0/" aria-label="pinterest-Konto link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 438.529 438.529" style="enable-background:new 0 0 512 512"
+                                    xml:space="preserve" class="">
+                                    <g>
+                                        <path
+                                            d="M409.141 109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.751 9.801 259.065 0 219.281 0 179.5 0 142.812 9.801 109.22 29.407c-33.597 19.604-60.194 46.201-79.8 79.796C9.809 142.8.008 179.485.008 219.267c0 44.35 12.085 84.611 36.258 120.767 24.172 36.172 55.863 62.912 95.073 80.232-.762-20.365.476-37.209 3.709-50.532l28.267-119.348c-4.76-9.329-7.139-20.93-7.139-34.831 0-16.175 4.089-29.689 12.275-40.541 8.186-10.85 18.177-16.274 29.979-16.274 9.514 0 16.841 3.14 21.982 9.42 5.142 6.283 7.705 14.181 7.705 23.7 0 5.896-1.099 13.084-3.289 21.554-2.188 8.471-5.041 18.273-8.562 29.409-3.521 11.132-6.045 20.036-7.566 26.692-2.663 11.608-.476 21.553 6.567 29.838 7.042 8.278 16.372 12.423 27.983 12.423 20.365 0 37.065-11.324 50.107-33.972 13.038-22.655 19.554-50.159 19.554-82.514 0-24.938-8.042-45.21-24.129-60.813-16.085-15.609-38.496-23.417-67.239-23.417-32.161 0-58.192 10.327-78.082 30.978-19.891 20.654-29.836 45.352-29.836 74.091 0 17.132 4.854 31.505 14.56 43.112 3.235 3.806 4.283 7.898 3.14 12.279-.381 1.143-1.141 3.997-2.284 8.562-1.138 4.565-1.903 7.522-2.281 8.851-1.521 6.091-5.14 7.994-10.85 5.708-14.654-6.085-25.791-16.652-33.402-31.689-7.614-15.037-11.422-32.456-11.422-52.246 0-12.753 2.047-25.505 6.14-38.256 4.089-12.756 10.468-25.078 19.126-36.975 8.663-11.9 19.036-22.417 31.123-31.549 12.082-9.135 26.787-16.462 44.108-21.982s35.972-8.28 55.959-8.28c27.032 0 51.295 5.995 72.8 17.986 21.512 11.992 37.925 27.502 49.252 46.537 11.327 19.036 16.987 39.403 16.987 61.101 0 28.549-4.948 54.243-14.842 77.086-9.896 22.839-23.887 40.778-41.973 53.813-18.083 13.042-38.637 19.561-61.675 19.561-11.607 0-22.456-2.714-32.548-8.135-10.085-5.427-17.034-11.847-20.839-19.273-8.566 33.685-13.706 53.77-15.42 60.24-3.616 13.508-11.038 29.119-22.27 46.819 20.367 6.091 41.112 9.13 62.24 9.13 39.781 0 76.47-9.801 110.062-29.41 33.595-19.602 60.192-46.199 79.794-79.791 19.606-33.599 29.407-70.287 29.407-110.065.01-39.778-9.777-76.468-29.376-110.06z"
+                                            fill="#fff" opacity="1" data-original="#fff"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com/whatscookingdotcom" aria-label="instagram-Konto link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512"
+                                    xml:space="preserve" class="">
+                                    <g>
+                                        <path
+                                            d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0"
+                                            fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                        <path
+                                            d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0"
+                                            fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://whats-cooking.com/" aria-label="whats cooking link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="">
+                                    <g>
+                                        <path
+                                            d="M471.383 44.578C444.879 15.832 408.512 0 368.973 0c-29.555 0-56.621 9.344-80.45 27.77C276.5 37.07 265.605 48.45 256 61.73c-9.602-13.277-20.5-24.66-32.527-33.96C199.648 9.344 172.582 0 143.027 0c-39.539 0-75.91 15.832-102.414 44.578C14.426 72.988 0 111.801 0 153.871c0 43.3 16.137 82.938 50.781 124.742 30.992 37.395 75.535 75.356 127.117 119.313 17.614 15.012 37.579 32.027 58.309 50.152A30.023 30.023 0 0 0 256 455.516c7.285 0 14.316-2.641 19.785-7.43 20.73-18.129 40.707-35.152 58.328-50.172 51.575-43.95 96.117-81.906 127.11-119.305C495.867 236.81 512 197.172 512 153.867c0-42.066-14.426-80.879-40.617-109.289zm0 0"
+                                            fill="#fff" opacity="1" data-original="#fff"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://vimeo.com/user53421412" aria-label="vimeo-Konto link">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                    viewBox="0 0 176 176" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="">
+                                    <g>
+                                        <g data-name="Layer 2">
+                                            <path
+                                                d="M159.67 0H16.33A16.33 16.33 0 0 0 0 16.33v143.34A16.33 16.33 0 0 0 16.33 176h143.34A16.33 16.33 0 0 0 176 159.67V16.33A16.33 16.33 0 0 0 159.67 0zM143 64.49c-.47 10.37-7.87 24.62-21.68 42.59C107.86 124.53 97.12 133.12 88 135a18.75 18.75 0 0 1-3.68.37c-9.47 0-18.69-26.52-24.77-48.78-3.18-11.46-5.86-16.27-8.94-16.12-2.84.09-6.61 2.76-10.61 5.59l-.12.1a2.93 2.93 0 0 1-4-.6l-2.28-2.94a3 3 0 0 1 .4-4L35.91 67C48.2 56.29 63.17 44 69.88 44c8.81 0 10.17 4.82 12.88 14.41.13.46 2.53 11.07 5.24 21.62s5.76 21.17 7.07 21.17c.79 0 3.53-3.5 8.48-11.27 4.07-6.4 7.35-12.43 8-14.69.75-2.67.62-4.72-.42-6.08-1.35-1.75-4.06-2.16-6.13-2.16a17.48 17.48 0 0 0-4.67.66 2.24 2.24 0 0 1-2.69-2.94c5.5-15.07 15.36-22.5 29.31-22 4.94.15 8.79 1.67 11.45 4.55 3.39 3.59 4.91 9.39 4.6 17.22z"
+                                                data-name="06.vimeo" fill="#fff" opacity="1" data-original="#fff"
+                                                class=""></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <aside
+            class="fixed inset-0 right-auto z-50 bg-green hidden md:flex w-full min-w-265 max-w-265 text-white py-36 px-45 flex-col justify-between items-center text-center text-12 gap-54 tracking-wider overflow-y-auto">
+            <a href="index.html" aria-label="westermann-buroh">
+                <img src="assets/images/logo.jpg" alt="westermann-buroh" class="w-75">
+            </a>
+            <nav class="uppercase font-bold flex flex-col gap-40">
+                <ul class="flex flex-col gap-10">
+                    <li>
+                        <a class="block" href="food.html">Food</a>
+                    </li>
+                    <li>
+                        <a class="block" href="reportage.html">Reportage</a>
+                    </li>
+                    <li>
+                        <a class="block" href="werbung.html">Werbung</a>
+                    </li>
+                    <li>
+                        <a class="block" href="portrait.html">Portrait</a>
+                    </li>
+                    <li>
+                        <a class="block" href="uber-uns.html">Über Uns</a>
+                    </li>
+                    <li>
+                        <a class="block" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col gap-10">
+                    <li>
+                        <a class="block" href="https://www.whats-cooking.com/" target="_blank">Foodblog</a>
+                    </li>
+                    <li>
+                        <a class="block" href="impressum.html">Impressum</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex flex-col gap-54">
+                <ul class="flex gap-14 justify-center">
+                    <li>
+                        <a href="#" aria-label="Facebook-Konto link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"
+                                        fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="pinterest-Konto link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 438.529 438.529" style="enable-background:new 0 0 512 512"
+                                xml:space="preserve" class="">
+                                <g>
+                                    <path
+                                        d="M409.141 109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.751 9.801 259.065 0 219.281 0 179.5 0 142.812 9.801 109.22 29.407c-33.597 19.604-60.194 46.201-79.8 79.796C9.809 142.8.008 179.485.008 219.267c0 44.35 12.085 84.611 36.258 120.767 24.172 36.172 55.863 62.912 95.073 80.232-.762-20.365.476-37.209 3.709-50.532l28.267-119.348c-4.76-9.329-7.139-20.93-7.139-34.831 0-16.175 4.089-29.689 12.275-40.541 8.186-10.85 18.177-16.274 29.979-16.274 9.514 0 16.841 3.14 21.982 9.42 5.142 6.283 7.705 14.181 7.705 23.7 0 5.896-1.099 13.084-3.289 21.554-2.188 8.471-5.041 18.273-8.562 29.409-3.521 11.132-6.045 20.036-7.566 26.692-2.663 11.608-.476 21.553 6.567 29.838 7.042 8.278 16.372 12.423 27.983 12.423 20.365 0 37.065-11.324 50.107-33.972 13.038-22.655 19.554-50.159 19.554-82.514 0-24.938-8.042-45.21-24.129-60.813-16.085-15.609-38.496-23.417-67.239-23.417-32.161 0-58.192 10.327-78.082 30.978-19.891 20.654-29.836 45.352-29.836 74.091 0 17.132 4.854 31.505 14.56 43.112 3.235 3.806 4.283 7.898 3.14 12.279-.381 1.143-1.141 3.997-2.284 8.562-1.138 4.565-1.903 7.522-2.281 8.851-1.521 6.091-5.14 7.994-10.85 5.708-14.654-6.085-25.791-16.652-33.402-31.689-7.614-15.037-11.422-32.456-11.422-52.246 0-12.753 2.047-25.505 6.14-38.256 4.089-12.756 10.468-25.078 19.126-36.975 8.663-11.9 19.036-22.417 31.123-31.549 12.082-9.135 26.787-16.462 44.108-21.982s35.972-8.28 55.959-8.28c27.032 0 51.295 5.995 72.8 17.986 21.512 11.992 37.925 27.502 49.252 46.537 11.327 19.036 16.987 39.403 16.987 61.101 0 28.549-4.948 54.243-14.842 77.086-9.896 22.839-23.887 40.778-41.973 53.813-18.083 13.042-38.637 19.561-61.675 19.561-11.607 0-22.456-2.714-32.548-8.135-10.085-5.427-17.034-11.847-20.839-19.273-8.566 33.685-13.706 53.77-15.42 60.24-3.616 13.508-11.038 29.119-22.27 46.819 20.367 6.091 41.112 9.13 62.24 9.13 39.781 0 76.47-9.801 110.062-29.41 33.595-19.602 60.192-46.199 79.794-79.791 19.606-33.599 29.407-70.287 29.407-110.065.01-39.778-9.777-76.468-29.376-110.06z"
+                                        fill="#fff" opacity="1" data-original="#fff"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="instagram-Konto link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0"
+                                        fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                    <path
+                                        d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0"
+                                        fill="#fff" opacity="1" data-original="#fff" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="whats cooking link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M471.383 44.578C444.879 15.832 408.512 0 368.973 0c-29.555 0-56.621 9.344-80.45 27.77C276.5 37.07 265.605 48.45 256 61.73c-9.602-13.277-20.5-24.66-32.527-33.96C199.648 9.344 172.582 0 143.027 0c-39.539 0-75.91 15.832-102.414 44.578C14.426 72.988 0 111.801 0 153.871c0 43.3 16.137 82.938 50.781 124.742 30.992 37.395 75.535 75.356 127.117 119.313 17.614 15.012 37.579 32.027 58.309 50.152A30.023 30.023 0 0 0 256 455.516c7.285 0 14.316-2.641 19.785-7.43 20.73-18.129 40.707-35.152 58.328-50.172 51.575-43.95 96.117-81.906 127.11-119.305C495.867 236.81 512 197.172 512 153.867c0-42.066-14.426-80.879-40.617-109.289zm0 0"
+                                        fill="#fff" opacity="1" data-original="#fff"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="vimeo-Konto link">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0"
+                                viewBox="0 0 176 176" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <g data-name="Layer 2">
+                                        <path
+                                            d="M159.67 0H16.33A16.33 16.33 0 0 0 0 16.33v143.34A16.33 16.33 0 0 0 16.33 176h143.34A16.33 16.33 0 0 0 176 159.67V16.33A16.33 16.33 0 0 0 159.67 0zM143 64.49c-.47 10.37-7.87 24.62-21.68 42.59C107.86 124.53 97.12 133.12 88 135a18.75 18.75 0 0 1-3.68.37c-9.47 0-18.69-26.52-24.77-48.78-3.18-11.46-5.86-16.27-8.94-16.12-2.84.09-6.61 2.76-10.61 5.59l-.12.1a2.93 2.93 0 0 1-4-.6l-2.28-2.94a3 3 0 0 1 .4-4L35.91 67C48.2 56.29 63.17 44 69.88 44c8.81 0 10.17 4.82 12.88 14.41.13.46 2.53 11.07 5.24 21.62s5.76 21.17 7.07 21.17c.79 0 3.53-3.5 8.48-11.27 4.07-6.4 7.35-12.43 8-14.69.75-2.67.62-4.72-.42-6.08-1.35-1.75-4.06-2.16-6.13-2.16a17.48 17.48 0 0 0-4.67.66 2.24 2.24 0 0 1-2.69-2.94c5.5-15.07 15.36-22.5 29.31-22 4.94.15 8.79 1.67 11.45 4.55 3.39 3.59 4.91 9.39 4.6 17.22z"
+                                            data-name="06.vimeo" fill="#fff" opacity="1" data-original="#fff" class="">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p class="font-hind">
+                    Westermann+Buroh Studios © <span id="current_year">2026</span> <br>
+                    All rights reserved
+                </p>
+            </div>
+        </aside>
+        <div id="main-content" class="not-md:pt-85 md:pl-265 grow text-white">
+            <div class="max-w-1200 mx-auto">
+                <div class="py-40 lg:py-80 xl:py-144 px-36 text-center font-poppins flex flex-col gap-9 xl:gap-18 text-15">
+                    <h1 class="text-35 font-semibold mb-9 xl:mb-20">
+                        Westermann + Buroh Studios GbR
+                    </h1>
+                    <p>
+                        Geschäftsführer: <br>
+                        Jan-Peter Westermann <br>
+                        Nikolai Buroh <br>
+                    </p>
+                    <p>
+                        Niendorfer Weg 11 <br>
+                        22453 Hamburg <br>
+                    </p>
+                    <p>
+                        <a href="tel:+49402996511" title="Telefon">Telefon: +49 (0) 40 299 65 11 </a> <br>
+                        Fax: +49 (0) 40 299 65 41 <br>
+                    </p>
+                    <p>
+                        USt.IdNr.: DE220857633
+                    </p>
+                    <p>
+                        <a href="mailto:mail@westermann-buroh.de?Subject=Hello%20" target="_top"
+                            rel="noopener noreferrer" class="cursor-init" title="Mail">
+                            mail [at] westermann-buroh [dot] de
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="border-t py-36 xl:py-72">
+                <div class="max-w-1200 mx-auto px-16 sm:px-36">
+                    <div class="grid xl:grid-cols-2 xl:gap-36 mb-36 xl:mb-72 2xl:mb-108">
+                        <div class="accordion font-hind text-15">
+                            <div class="item -mt-1 group">
+                                <button
+                                    class="title group flex items-center justify-between py-18 border-y w-full text-left uppercase text-12 font-poppins font-semibold tracking-widest">
+                                    <span>Projekte</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="group-[.open]:opacity-100 opacity-0">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+                                <div class="content max-h-0 overflow-hidden transition_slow group-last:border-b">
+                                    <ul class="list-arrow py-36">
+                                        <li>
+                                            <a href="#">
+                                                Whats-Cooking Foodblog
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                eat smarter - Gesunde und leichte Rezepte in 1000 Variationen
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                HIT - Kochen für Christoph Rüffer
+                                            </a>
+                                        </li>
+                                        <li>
+                                            "Unser Norden" Supermärkte Nord
+                                        </li>
+                                        <li>
+                                            "Der Gugelhupf" Dr Oetker
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item -mt-1 group">
+                                <button
+                                    class="title group flex items-center justify-between py-18 border-y w-full text-left uppercase text-12 font-poppins font-semibold tracking-widest">
+                                    <span>Foodstyling</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="group-[.open]:opacity-100 opacity-0">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+                                <div class="content max-h-0 overflow-hidden transition_slow group-last:border-b">
+                                    <ul class="list-arrow py-36">
+                                        <li>
+                                            <a href="#">
+                                                Patricia Darlison - Foodstyling
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Alexandra Böhme - Foodstyling und Rezeptentwicklung
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Patrice Brault - Professionelles Foodstyling und Anfertigung von Dummies
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Rocco Dressel - Foodstyling
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Volker Hobl - Foodstyling
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Michaela E. Pfeiffer - Foodstyling
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Pio Food - Styling & Rezept Entwicklung
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Hermann Rottmann - Styling & Rezept Entwicklung
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Sarah Trenkle - Foodstyling & Rezepte
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Pia Westermann - Foodstyling
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Roland Geiselmann - Styling & Rezept Entwicklung
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Maik Schacht - Foodstyling
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item -mt-1 group">
+                                <button
+                                    class="title group flex items-center justify-between py-18 border-y w-full text-left uppercase text-12 font-poppins font-semibold tracking-widest">
+                                    <span>Styling</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="group-[.open]:opacity-100 opacity-0">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+                                <div class="content max-h-0 overflow-hidden transition_slow group-last:border-b">
+                                    <ul class="list-arrow py-36">
+                                        <li>
+                                            <a href="#">
+                                                Spaces and Places - Juliane Bennien
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Anja Buroh - Styling
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Christine Mähler - Styling & Produktion
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Carola Krogmann - Hair & MakeUp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Meike Stüber - Creativproduktion
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Krisztina Zombori - Styling
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Katrin Heinatz - Produktion und Styling
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Petra Lange - Styling
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Imke Moor - Styling und Produktion
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item -mt-1 group">
+                                <button
+                                    class="title group flex items-center justify-between py-18 border-y w-full text-left uppercase text-12 font-poppins font-semibold tracking-widest">
+                                    <span>Bezugsquellen</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="group-[.open]:opacity-100 opacity-0">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+                                <div class="content max-h-0 overflow-hidden transition_slow group-last:border-b">
+                                    <ul class="list-arrow py-36">
+                                        <li>
+                                            <a href="#">
+                                                Amazon: Bücher von Nikolai Buroh
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Amazon: Bücher von Jan-Peter Westermann
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Stockfood: Bilder von Nikolai Buroh
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Stockfood: Bilder von Jan-Peter Westermann
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Stockfood: Bilder von Westermann+Buroh Studios
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Plainpicture: Bilder von Nikolai Buroh
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Plainpicture: Bilder von Jan-Peter Westermann
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Picture Press: Bilder von Jan-Peter Westermann
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion font-hind text-15">
+                            <div class="item -mt-1 group">
+                                <button
+                                    class="title group flex items-center justify-between py-18 border-y w-full text-left uppercase text-12 font-poppins font-semibold tracking-widest">
+                                    <span>Verlage</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="group-[.open]:opacity-100 opacity-0">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+                                <div class="content max-h-0 overflow-hidden transition_slow group-last:border-b">
+                                    <ul class="list-arrow py-36">
+                                        <li>
+                                            <a href="#">
+                                                AT Verlag
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                FIT FOR FUN Verlag GmbH
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Gräfe und Unzer Verlag GmbH
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Mosaik bei Goldmann
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Random House Verlagsgruppe
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Südwest Verlag
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                TRIAS Verlag
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                ZS Verlag
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item -mt-1 group">
+                                <button
+                                    class="title group flex items-center justify-between py-18 border-y w-full text-left uppercase text-12 font-poppins font-semibold tracking-widest">
+                                    <span>Redaktionen</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="group-[.open]:opacity-100 opacity-0">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+                                <div class="content max-h-0 overflow-hidden transition_slow group-last:border-b">
+                                    <ul class="list-arrow py-36">
+                                        <li>
+                                            <a href="#">
+                                                ARD Buffet
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                AOK vigo
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Beef!
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Chefkoch
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Der Feinschmecker
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Eat Smarter GmbH & Co. KG
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Essen und Trinken
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Fit For Fun
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Frisch gekocht
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Für Sie
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                GEO Saison
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Lecker
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Living at Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Lust auf Genuss
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Meine Familie & ich
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Season
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Somelier
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Stern
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Stern: Gesund Leben
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Wie Einfach
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item -mt-1 group">
+                                <button
+                                    class="title group flex items-center justify-between py-18 border-y w-full text-left uppercase text-12 font-poppins font-semibold tracking-widest">
+                                    <span>Werbung</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="group-[.open]:opacity-100 opacity-0">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+                                <div class="content max-h-0 overflow-hidden transition_slow group-last:border-b">
+                                    <ul class="list-arrow py-36">
+                                        <li>
+                                            Almased Wellness GmbH
+                                        </li>
+                                        <li>
+                                            Amecke Fruchtsäfte GmbH & Co. KG
+                                        </li>
+                                        <li>
+                                            Ammerland Molkerei
+                                        </li>
+                                        <li>
+                                            apetito convenience GmbH & Co. KG
+                                        </li>
+                                        <li>
+                                            arko GmbH
+                                        </li>
+                                        <li>
+                                            Arla Foods GmbH
+                                        </li>
+                                        <li>
+                                            ASA Selection GmbH
+                                        </li>
+                                        <li>
+                                            Bahlsen GmbH & Co. KG
+                                        </li>
+                                        <li>
+                                            Beiersdorf AG
+                                        </li>
+                                        <li>
+                                            Billa AG
+                                        </li>
+                                        <li>
+                                            Block House Restaurantbetriebe AG
+                                        </li>
+                                        <li>
+                                            Bongrain Deutschland
+                                        </li>
+                                        <li>
+                                            Bontempo oHG
+                                        </li>
+                                        <li>
+                                            Robert Bosch GmbH
+                                        </li>
+                                        <li>
+                                            Campell´s Germany GmbH
+                                        </li>
+                                        <li>
+                                            Chocolat Frey AG
+                                        </li>
+                                        <li>
+                                            Coppenrath Feingebäck GmbH
+                                        </li>
+                                        <li>
+                                            Danone GmbH
+                                        </li>
+                                        <li>
+                                            Dextro Energie GmbH & Co. KG
+                                        </li>
+                                        <li>
+                                            Dr. August Oetker Nahrungsmittel KG
+                                        </li>
+                                        <li>
+                                            Emmi AG
+                                        </li>
+                                        <li>
+                                            Feinkost Käfer GmbH
+                                        </li>
+                                        <li>
+                                            Ferrero Deutschland GmbH
+                                        </li>
+                                        <li>
+                                            Fisch Informations Zentrum
+                                        </li>
+                                        <li>
+                                            Gaggenau Hausgeräte GmbH
+                                        </li>
+                                        <li>
+                                            Galbani Deutschland GmbH
+                                        </li>
+                                        <li>
+                                            Gandour India Food Processing Pvt. Ltd
+                                        </li>
+                                        <li>
+                                            General Mills GmbH
+                                        </li>
+                                        <li>
+                                            Hans-Hinrich Basedahl Schinkensalzerei und -räucherei GmbH
+                                        </li>
+                                        <li>
+                                            Harry Brot GmbH
+                                        </li>
+                                        <li>
+                                            Hermes Arzneimittel GmbH
+                                        </li>
+                                        <li>
+                                            Hilcona AG
+                                        </li>
+                                        <li>
+                                            Jermi Käsewerk GmbH
+                                        </li>
+                                        <li>
+                                            J.T. Ronnefeld KG
+                                        </li>
+                                        <li>
+                                            Iglo GmbH
+                                        </li>
+                                        <li>
+                                            Intersnack Knabber-Gebäck GmbH & Co. KG
+                                        </li>
+                                        <li>
+                                            Kaufland Warenhandel GmbH
+                                        </li>
+                                        <li>
+                                            Lacroix GmbH
+                                        </li>
+                                        <li>
+                                            Lactalis Deutschland GmbH
+                                        </li>
+                                        <li>
+                                            Lieken AG
+                                        </li>
+                                        <li>
+                                            Mars GmbH
+                                        </li>
+                                        <li>
+                                            Melitta Zentralgesellschaft mbH & Co. KG
+                                        </li>
+                                        <li>
+                                            Mecklenburger Kartoffelveredelung GmbH
+                                        </li>
+                                        <li>
+                                            Mövenpick Foods Switzerland Ltd
+                                        </li>
+                                        <li>
+                                            Molkerei Alois Müller GmbH & Co. KG
+                                        </li>
+                                        <li>
+                                            Nadler Feinkost GmbH
+                                        </li>
+                                        <li>
+                                            Nestlé Deutschland AG
+                                        </li>
+                                        <li>
+                                            Parfümerie Douglas GmbH
+                                        </li>
+                                        <li>
+                                            Peter Kölln KG
+                                        </li>
+                                        <li>
+                                            Rauch Fruchtsäfte GmbH & Co OG
+                                        </li>
+                                        <li>
+                                            Rausch Schokoladen GmbH
+                                        </li>
+                                        <li>
+                                            Red Bull GmbH
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item -mt-1 group">
+                                <button
+                                    class="title group flex items-center justify-between py-18 border-y w-full text-left uppercase text-12 font-poppins font-semibold tracking-widest">
+                                    <span>Kochbuchveröffentlichungen</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="group-[.open]:opacity-100 opacity-0">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+                                <div class="content max-h-0 overflow-hidden transition_slow group-last:border-b">
+                                    <ul class="list-arrow py-36">
+                                        <li>
+                                            Chefkoch Ofenglück 2016 / NGV
+                                        </li>
+                                        <li>
+                                            Chefkoch Low Carb 2016 / NGV
+                                        </li>
+                                        <li>
+                                            Brote und Aufstriche 2016 / ZS Verlag
+                                        </li>
+                                        <li>
+                                            Grill den Henssler 2015 / Gräfe und Unzer Verlag
+                                        </li>
+                                        <li>
+                                            Chefkoch Weihnachten 2015 / NGV
+                                        </li>
+                                        <li>
+                                            Chefkoch Leichte Küche 2015 / NGV
+                                        </li>
+                                        <li>
+                                            Chefkoch Vegetarisch 2015 / NGV
+                                        </li>
+                                        <li>
+                                            Chefkoch Familienküche 2015 / NGV
+                                        </li>
+                                        <li>
+                                            Chefkoch Backideen 2015 / NGV
+                                        </li>
+                                        <li>
+                                            Chefkoch Blitzrezepte 2015 / NGV
+                                        </li>
+                                        <li>
+                                            Chefkoch Partyküche 2014 / NGV
+                                        </li>
+                                        <li>
+                                            Vegetarisch Kreativ 2014 / BLV Buchverlag
+                                        </li>
+                                        <li>
+                                            Das Almased-Kochbuch 2013 / Trias
+                                        </li>
+                                        <li>
+                                            Sansibar - Partyküche: Die Originalrezepte der Sylter Kultbar 2013 / Südwest
+                                            Verlag
+                                        </li>
+                                        <li>
+                                            Kochen - Die neue digitale Schule 2012 / Zabert Sandmann
+                                        </li>
+                                        <li>
+                                            Cornelia Poletto - "Meine Lieblingsrezepte" 2012 / Zabert Sandmann
+                                        </li>
+                                        <li>
+                                            Teubner - "Klassiker" 2012 / Gräfe und Unzer Verlag
+                                        </li>
+                                        <li>
+                                            Polettos Kochschule - "Meine schnelle Küche für jeden Tag" 2011 / Zabert
+                                            Sandmann
+                                        </li>
+                                        <li>
+                                            "Kräuter & Gewürze" 2011 / Gräfe und Unzer Verlag
+                                        </li>
+                                        <li>
+                                            Teubner - "Das große Buch der Desserts" 2010 / Teubner Edition
+                                        </li>
+                                        <li>
+                                            Polettos Kochschule - "Mein neuer Grundkurs für Einsteiger" 2010 / Zabert
+                                            Sandmann
+                                        </li>
+                                        <li>
+                                            Thomas Martin - "Meine Jacobsleiter" 2010 / Südwest Verlag
+                                        </li>
+                                        <li>
+                                            "Die Chinesische Tempelküche" 2010 / AT Verlag
+                                        </li>
+                                        <li>
+                                            "Strandküche: Die Originalrezepte der legendären Sansibar" 2010 / Südwest
+                                            Verlag
+                                        </li>
+                                        <li>
+                                            Teubner - "Das große Buch der Saucen" 2009 / Teubner Edition
+                                        </li>
+                                        <li>
+                                            Polettos Kochschule - "Mein Grundkurs für Einsteiger" 2009 / Zabert Sandmann
+                                        </li>
+                                        <li>
+                                            Teubner - "Das große Buch der Kräuter & Gewürze" 2008 / Teubner Edition
+                                        </li>
+                                        <li>
+                                            Teubner - "Deutsche Küche" 2007 / Teubner Edition
+                                        </li>
+                                        <li>
+                                            Johannes B. Kerner - "Kerners Kochbuch" 2007 / Zabert Sandmann
+                                        </li>
+                                        <li>
+                                            Steffen Henssler - "Hensslers Küche" 2006 / Zabert Sandmann
+                                        </li>
+                                        <li>
+                                            Teubner - "Das große Buch vom Fleisch" 2006 / Teubner Edition
+                                        </li>
+                                        <li>
+                                            Johannes B. Kerner - "Kerners Köche" 2005 / Zabert Sandmann
+                                        </li>
+                                        <li>
+                                            Tim Mälzer - "Born to cook 2" 2005 / Mosaik bei Goldmann
+                                        </li>
+                                        <li>
+                                            Teubner - "Das große Buch vom Fisch" 2005 / Teubner Edition
+                                        </li>
+                                        <li>
+                                            "Kräuter" 2005 / Gräfe und Unzer Verlag
+                                        </li>
+                                        <li>
+                                            Tim Mälzer - "Born to cook" 2004 / Mosaik bei Goldmann
+                                        </li>
+                                        <li>
+                                            "Würzen" 2003 / Gräfe und Unzer Verlag
+                                        </li>
+                                        <li>
+                                            Essen + Trinken - "Karibische Versuchung" 2001 / Naumann & Göbel
+                                        </li>
+                                        <li>
+                                            Fit for Fun - "Cocktails" 1999 / Südwest Verlag
+                                        </li>
+                                        <li>
+                                            Fit for Fun - "Noodles" 1998 / Südwest Verlag
+                                        </li>
+                                        <li>
+                                            Fit for Fun - "Salate & Vorspeisen" 1998 / Südwest Verlag
+                                        </li>
+                                        <li>
+                                            Fit for Fun - "Fitness-Küche" 1997 / Südwest Verlag
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="text-35 font-semibold mb-18 xl:mb-36">AGBs</h2>
+                    <div class="text_editor border p-18 font-hind font-semibold flex flex-col gap-9 xl:gap-18">
+                        <p>
+                            1. Haftung für Inhalte: <br>
+                            Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
+                            Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als
+                            Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
+                            allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter
+                            jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen
+                            oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+                            Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den
+                            allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst
+                            ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei bekannt werden
+                            von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+                        </p>
+                        <hr class="my-9 xl:my-18">
+                        <p>
+                            2. Haftung für Links: <br>
+                            Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen
+                            Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
+                            Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der
+                            Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf
+                            mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung
+                            nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne
+                            konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von
+                            Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+                        </p>
+                        <hr class="my-9 xl:my-18">
+                        <p>
+                            3. Urheberrecht: <br>
+                            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
+                            deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+                            Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung
+                            des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den
+                            privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht
+                            vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere
+                            werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine
+                            Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei
+                            Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+                        </p>
+                        <hr class="my-9 xl:my-18">
+                        <p>
+                            4. Datenschutz gemäß EU-DSGVO:
+                        </p>
+                        <p>
+                            Mit dieser Datenschutzerklärung möchten wir Sie darüber informieren, wie wir
+                            personenbezogene Daten verarbeiten und Sie über Ihre Rechte aufklären. Wir sind uns bewusst,
+                            welche Bedeutung die Verarbeitung personenbezogener Daten für Sie als betroffener Nutzer hat
+                            und beachten dementsprechend alle einschlägigen gesetzlichen Vorgaben. Dabei ist der Schutz
+                            Ihrer Privatsphäre für uns von höchster Bedeutung. Die Verarbeitung Ihrer personenbezogenen
+                            Daten durch uns erfolgt unter Einhaltung der Datenschutzgrundverordnung, sowie der
+                            landesrechtlichen Datenschutzbestimmungen.
+                        </p>
+                        <p>
+                            Namen und Kontaktdaten des Verantwortlichen sowie seines Vertreters
+                        </p>
+                        <p>
+                            WESTERMANN+BUROH STUDIOS GbR
+                        </p>
+                        <p>
+                            Niendorfer Weg 11 <br>
+                            D-22453 Hamburg
+                        </p>
+                        <p>
+                            T +49-40-299 65 11 <br>
+                            F +49-40-299 65 41
+                        </p>
+                        <a href="mailto:mail@westermann-buroh.de" class="cursor-init"
+                            title="Mail">mail@westermann-buroh.de</a>
+                        <a href="http://www.westermann-buroh.de" class="cursor-init"
+                            title="Website">www.westermann-buroh.de</a>
+                        <p>
+                            vertretungsberechtigte Geschäftsführer: <br>
+                            Jan-Peter Westermann <br>
+                            Nikolai Buroh <br>
+                        </p>
+                        <p>
+                            Begriffsbestimmungen
+                        </p>
+                        <p>
+                            Diese Datenschutzerklärung bedient sich der Begrifflichkeiten der Datenschutzgrundverordnung
+                            (DSGVO).
+                        </p>
+                        <p>
+                            „personenbezogene Daten“ sind alle Informationen, die sich auf eine identifizierte oder
+                            identifizierbare natürliche Person (im Folgenden „betroffene Person“) beziehen; als
+                            identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt,
+                            insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu
+                            Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen
+                            identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen,
+                            psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person
+                            sind.
+                        </p>
+                        <p>
+                            „Verarbeitung“ ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführter Vorgang
+                            oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten wie das Erheben,
+                            das Erfassen, die Organisation, das Ordnen, die Speicherung, die Anpassung oder Veränderung,
+                            das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch Übermittlung, Verbreitung
+                            oder eine andere Form der Bereitstellung, den Abgleich oder die Verknüpfung, die
+                            Einschränkung, das Löschen oder die Vernichtung.
+                        </p>
+                        <p>
+                            „Einschränkung der Verarbeitung“ ist die Markierung gespeicherter personenbezogener Daten
+                            mit dem Ziel, ihre künftige Verarbeitung einzuschränken.
+                        </p>
+                        <p>
+                            „Profiling“ ist jede Art der automatisierten Verarbeitung personenbezogener Daten, die darin
+                            besteht, dass diese personenbezogenen Daten verwendet werden, um bestimmte persönliche
+                            Aspekte, die sich auf eine natürliche Person beziehen, zu bewerten, insbesondere um Aspekte
+                            bezüglich Arbeitsleistung, wirtschaftliche Lage, Gesundheit, persönliche Vorlieben,
+                            Interessen, Zuverlässigkeit, Verhalten, Aufenthaltsort oder Ortswechsel dieser natürlichen
+                            Person zu analysieren oder vorherzusagen.
+                        </p>
+                        <p>
+                            „Pseudonymisierung“ ist die Verarbeitung personenbezogener Daten in einer Weise, dass die
+                            personenbezogenen Daten ohne Hinzuziehung zusätzlicher Informationen nicht mehr einer
+                            spezifischen betroffenen Person zugeordnet werden können, sofern diese zusätzlichen
+                            Informationen gesondert aufbewahrt werden und technischen und organisatorischen Maßnahmen
+                            unterliegen, die gewährleisten, dass die personenbezogenen Daten nicht einer identifizierten
+                            oder identifizierbaren natürlichen Person zugewiesen werden.
+                        </p>
+                        <p>
+                            „Dateisystem“ ist jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten
+                            Kriterien zugänglich sind, unabhängig davon, ob diese Sammlung zentral, dezentral oder nach
+                            funktionalen oder geografischen Gesichtspunkten geordnet geführt wird;
+                        </p>
+                        <p>
+                            „Verantwortlicher“ ist die natürliche oder juristische Person, Behörde, Einrichtung oder
+                            andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der
+                            Verarbeitung von personenbezogenen Daten entscheidet; sind die Zwecke und Mittel dieser
+                            Verarbeitung durch das Unionsrecht oder das Recht der Mitgliedstaaten vorgegeben, so können
+                            der Verantwortliche beziehungsweise die bestimmten Kriterien seiner Benennung nach dem
+                            Unionsrecht oder dem Recht der Mitgliedstaaten vorgesehen werden.
+                        </p>
+                        <p>
+                            „Auftragsverarbeiter“ ist eine natürliche oder juristische Person, Behörde, Einrichtung oder
+                            andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.
+                        </p>
+                        <p>
+                            „Empfänger“ ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere
+                            Stelle, denen personenbezogene Daten offengelegt werden, unabhängig davon, ob es sich bei
+                            ihr um einen Dritten handelt oder nicht. Behörden, die im Rahmen eines bestimmten
+                            Untersuchungsauftrags nach dem Unionsrecht oder dem Recht der Mitgliedstaaten möglicherweise
+                            personenbezogene Daten erhalten, gelten jedoch nicht als Empfänger; die Verarbeitung dieser
+                            Daten durch die genannten Behörden erfolgt im Einklang mit den geltenden
+                            Datenschutzvorschriften gemäß den Zwecken der Verarbeitung.
+                        </p>
+                        <p>
+                            „Dritter“ ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere
+                            Stelle, außer der betroffenen Person, dem Verantwortlichen, dem Auftragsverarbeiter und den
+                            Personen, die unter der unmittelbaren Verantwortung des Verantwortlichen oder des
+                            Auftragsverarbeiters befugt sind, die personenbezogenen Daten zu verarbeiten.
+                        </p>
+                        <p>
+                            „Einwilligung“ ist die der betroffenen Person freiwillig für den bestimmten Fall, in
+                            informierter Weise und unmissverständlich abgegebene Willensbekundung in Form einer
+                            Erklärung oder einer sonstigen eindeutigen bestätigenden Handlung, mit der die betroffene
+                            Person zu verstehen gibt, dass sie mit der Verarbeitung der sie betreffenden
+                            personenbezogenen Daten einverstanden ist.
+                        </p>
+                        <p>
+                            Verarbeitungsvorgänge
+                        </p>
+                        <p>
+                            Wir erheben und verarbeiten die folgenden personenbezogenen Daten über Sie:
+                        </p>
+                        <ul>
+                            <li>
+                                Kontakt -und Adressinformationen, sofern Sie uns Ihre Kontaktinformationen übermittelt
+                                oder sich auf unserer Seite registriert haben,
+                            </li>
+                            <li>
+                                Online-Identifikatoren (z.B. Ihre IP-Adresse, Browsertyp und Browserversion, das
+                                verwandte Betriebssystem, die Referrer-URL, die IP-Adresse, den Dateinamen, den
+                                Zugriffsstatus, die übertragene Datenmenge, das Datum und die Uhrzeit der
+                                Serveranfrage),
+                            </li>
+                            <li>
+                                Social Media-Identifikatoren.
+                            </li>
+                        </ul>
+                        <p>
+                            Verarbeitungszwecke
+                        </p>
+                        <p>
+                            Wir verarbeiten Ihre Daten zu den folgenden Zwecken:
+                        </p>
+                        <p>
+                            für die von Ihnen gewünschte Kontaktaufnahme,
+                            zur Aktualisierung unseres Angebots an Sie,
+                            zu Werbezwecken,
+                            zur Versendung des E-Mail-Newsletters, sofern Sie sich hierfür angemeldet haben,
+                            zur Qualitätssicherung und
+                            für unsere Statistik.
+                            Rechtsgrundlage der Datenverarbeitung
+                        </p>
+                        <p>
+                            Die Verarbeitung Ihrer Daten geschieht auf den folgenden Rechtsgrundlagen:
+                        </p>
+                        <p>
+                            Ihrer Einwilligung nach Art. 6 Abs. 1 lit. a) DSGVO,
+                            zur Durchführung eines Vertrags mit Ihnen nach Art. 6 Abs. 1 lit. b) DSGVO,
+                            zur Erfüllung gesetzlicher Pflichten nach Art. 6 Abs. 1 lit. c) DSGVO oder
+                            aus einem berechtigten Interesse nach Art. 6 Abs. 1 lit. f) DSGVO.
+                            Berechtigte Interessen
+                        </p>
+                        <p>
+                            Sofern wir die Verarbeitung Ihrer personenbezogenen Daten auf berechtigte Interessen iSv.
+                            Art. 6 Abs. 1 lit. f) DS-GVO stützen, sind solche
+                        </p>
+                        <p>
+                            die Verbesserung unseres Angebots,
+                            der Schutz vor Missbrauch und
+                            die Führung unserer Statistik.
+                            Datenquellen
+                        </p>
+                        <p>
+                            Wir erhalten die Daten von Ihnen (einschließlich über die von Ihnen verwendeten Geräte).
+                            Sollten wir die personenbezogenen Daten nicht direkt von Ihnen erheben, so teilen wir Ihnen
+                            zusätzlich mit, aus welcher Quelle die personenbezogenen Daten stammen und gegebenenfalls ob
+                            sie aus öffentlich zugänglichen Quellen stammen.
+                        </p>
+                        <p>
+                            Empfänger oder Kategorien von Empfängern der personenbezogenen Daten
+                        </p>
+                        <p>
+                            Bei der Verarbeitung Ihrer Daten arbeiten wir mit den folgenden Dienstleistern zusammen, die
+                            Zugriff auf Ihre Daten haben:
+                        </p>
+                        <p>
+                            Anbieter von Webanalyse-Tools,
+                            Web-Hosting-Anbieter
+                            Es findet eine Datenübertragung in Drittländer außerhalb der Europäischen Union statt. Dies
+                            erfolgt auf der Grundlage gesetzlich vorgesehener vertraglicher Regelungen, die einen
+                            angemessenen Schutz Ihrer Daten sicherstellen sollen und die Sie auf Anfrage einsehen
+                            können.
+                        </p>
+                        <p>
+                            Speicherdauer
+                        </p>
+                        <p>
+                            Wir speichern Ihre personenbezogenen Daten nur solange, wie es für die Erreichung des
+                            Verarbeitungszweckes nötig ist oder die Speicherung einer gesetzlichen Aufbewahrungsfrist
+                            unterliegt.
+                            Wir speichern Ihre Daten,
+                        </p>
+                        <p>
+                            wenn Sie in die Verarbeitung eingewilligt haben höchstens solange, bis Sie Ihre Einwilligung
+                            widerrufen,
+                            wenn wir die Daten zur Durchführung eines Vertrags benötigen höchstens solange, wie das
+                            Vertragsverhältnis mit Ihnen besteht oder gesetzliche Aufbewahrungsfristen laufen,
+                            wenn wir die Daten auf der Grundlage eines berechtigten Interesses verwenden höchstens
+                            solange, wie Ihr Interesse an einer Löschung oder Anonymisierung nicht überwiegt.
+                            Ihre Rechte
+                        </p>
+                        <p>
+                            Sie haben - teilweise unter bestimmten Voraussetzungen - das Recht,
+                        </p>
+                        <p>
+                            unentgeltlich Auskunft über die Verarbeitung Ihrer Daten zu verlangen, sowie den Erhalt
+                            einer Kopie Ihrer personenbezogenen Daten. Auskunft können Sie u.a. verlangen über die
+                            Zwecke der Verarbeitung, die Kategorien der personenbezogenen Daten die verarbeitet werden,
+                            die Empfänger der Daten (sofern eine Weitergabe erfolgt), die Dauer der Speicherung oder die
+                            Kriterien für die Festlegung der Dauer;
+                            Ihre Daten zu berichtigen. Sollten Ihre personenbezogenen Daten unvollständig sein, so haben
+                            Sie, unter Berücksichtigung der Verarbeitungszwecke, das Recht die Daten zu
+                            vervollständigen;
+                            Ihre Daten löschen oder sperren zu lassen. Gründe für das Bestehen eines
+                            Löschungs-/Sperrungsanspruchs können u.a. sein der Widerruf der Einwilligung auf dem die
+                            Verarbeitung fußt, die betroffene Person legt Widerspruch gegen die Verarbeitung ein, die
+                            personenbezogenen Daten wurden unrechtmäßig verarbeitet;
+                            die Verarbeitung einschränken zu lassen;
+                            der Verarbeitung Ihrer Daten zu widersprechen;
+                            Ihre Einwilligung zur Verarbeitung Ihrer Daten für die Zukunft zu widerrufen und
+                            sich bei der zuständigen Aufsichtsbehörde über eine unzulässige Datenverarbeitung zu
+                            beschweren.
+                            Erfordernis oder Verpflichtung zur Bereitstellung von Daten
+                        </p>
+                        <p>
+                            Soweit dies bei der Erhebung nicht ausdrücklich angegeben ist, ist die Bereitstellung von
+                            Daten nicht erforderlich oder verpflichtend. Eine solche Verpflichtung kann sich aus
+                            gesetzlichen Vorgaben oder vertraglichen Regelungen ergeben.
+                        </p>
+                        <p>
+                            Weitere Informationen zum Datenschutz
+                        </p>
+                        <p>
+                            Kontaktformular
+                            Das Kontaktformular auf unserer Website ist eine einfache Möglichkeit schnell mit uns in
+                            Kontakt zu treten. Damit die Kontaktaufnahme möglich ist, sind einige Felder als
+                            Pflichtfelder gekennzeichnet. Wenn Sie die Felder ausfüllen und „Senden“ wählen, stimmen Sie
+                            zu, dass Ihre Daten mit der Nachricht per E-Mail an uns übermittelt werden. Die Daten werden
+                            nicht auf dem Webserver gespeichert.
+                        </p>
+                        <p>
+                            E-Mail-Newsletter
+                        </p>
+                        <p>
+                            Wenn Sie sich zu unserem Newsletter anmelden, verwenden wir die hierfür erforderlichen oder
+                            gesondert von Ihnen mitgeteilten Daten, um Ihnen regelmäßig unseren E-Mail-Newsletter
+                            zuzusenden. Die Abmeldung vom Newsletter ist jederzeit möglich und kann entweder durch eine
+                            Nachricht an die oben beschriebene Kontaktmöglichkeit oder über den dafür vorgesehenen
+                            Abmeldelink im Newsletter erfolgen.
+                        </p>
+                        <p>
+                            Datensicherung
+                        </p>
+                        <p>
+                            Wir haben umfangreiche technische und organisatorische Maßnahmen ergriffen, um Ihre Daten
+                            gegen mögliche Gefahren, wie unbefugten Zugang oder Zugriff, unbefugte Kenntnisnahme,
+                            Veränderung oder Verbreitung, sowie vor Verlust, Zerstörung oder Missbrauch zu sichern.
+                        </p>
+                        <p>
+                            Um Ihre persönlichen Daten bei der Übertragung vor unberechtigtem Zugriff Dritter zu
+                            schützen, sichern wir die Datenübertragungen ggf. mittels SSL-Verschlüsselung. Es handelt
+                            sich dabei um ein standardisiertes Verschlüsselungsverfahren für Online-Dienste,
+                            insbesondere für das Web.
+                        </p>
+                        <p>
+                            Logfiles
+                        </p>
+                        <p>
+                            Bei jedem Zugriff auf unsere Internet-Seiten werden Nutzungsdaten durch den jeweiligen
+                            Internetbrowser übermittelt und in Protokolldateien, den sogenannten Server-Logfiles,
+                            gespeichert. Die dabei gespeicherten Datensätze enthalten die folgenden Daten: Domain, von
+                            der aus der Nutzer Zugriff auf die Webseite nimmt, Datum und Uhrzeit des Abrufs IP-Adresse
+                            des zugreifenden Rechners Webseite(n), die der Nutzer im Rahmen des Angebots besucht,
+                            übertragene Datenmenge, Browsertyp und -version, verwendetes Betriebssystem, Name des
+                            Internet-Service-Providers, Meldung, ob der Abruf erfolgreich war. Diese Logfile-Datensätze
+                            werden in anonymisierter Form ausgewertet, um das Angebot zu verbessern und
+                            nutzerfreundlicher zu gestalten, Fehler zu finden und zu beheben und die Auslastung von
+                            Servern zu steuern.
+                        </p>
+                        <p>
+                            Cookies
+                        </p>
+                        <p>
+                            Diese Website verwendet sog. Cookies. Ein Cookie ist eine Textdatei mit einer
+                            Identifikationsnummer, die bei der Nutzung der Website zusammen mit den anderen, eigentlich
+                            angeforderten Daten an den Computer des Nutzers übermittelt und dort hinterlegt wird. Die
+                            Datei wird dort für einen späteren Zugriff bereitgehalten und dient zur Authentifizierung
+                            des Nutzers. Da Cookies nur einfache Dateien und keine ausführbaren Programme sind, geht von
+                            ihnen keine Gefahr für den Computer aus. Je nach gewählter Einstellung des Internetbrowsers
+                            durch den Nutzer akzeptiert dieser Cookies automatisch. Diese Einstellung kann aber geändert
+                            und die Speicherung von Cookies deaktiviert oder dergestalt eingestellt werden, dass der
+                            Nutzer benachrichtigt wird, sobald ein Cookie gesetzt wird. Im Falle einer Deaktivierung der
+                            Cookienutzung stehen allerdings ggf. einige Funktionen der Webseite nicht oder nur
+                            eingeschränkt zur Verfügung. Sie können die Setzung von Cookies durch unsere Internetseite
+                            jederzeit mittels einer entsprechenden Einstellung des genutzten Internetbrowsers verhindern
+                            und damit der Setzung von Cookies dauerhaft widersprechen. Bereits aktive Cookies können
+                            jederzeit über einen Internetbrowser oder andere Softwareprogramme gelöscht werden. Wir
+                            arbeiten unter Umständen mit Werbepartnern zusammen, die uns helfen, unser Internetangebot
+                            für Sie interessanter zu gestalten. Zu diesem Zweck werden für diesen Fall bei Ihrem Besuch
+                            unserer Website auch Cookies von Partnerunternehmen auf Ihrer Festplatte gespeichert
+                            (Cookies von Drittanbietern). Wenn wir mit vorbenannten Werbepartnern zusammenarbeiten,
+                            werden Sie über den Einsatz derartiger Cookies und den Umfang der jeweils erhobenen
+                            Informationen innerhalb der nachstehenden Absätze individuell und gesondert informiert.
+                        </p>
+                        <p>
+                            Es werden folgende Arten von Cookies unterschieden:
+                        </p>
+                        <p>
+                            Erstanbieter-Cookies: Erstanbieter-Cookies werden von der gerade besuchten Plattform
+                            übertragen.
+                        </p>
+                        <p>
+                            Drittanbieter-Cookies (sog. Third Party Cookies): Drittanbieter-Cookies sind Cookies, die
+                            von einem anderen Anbieter als dem der vom Nutzer besuchten Plattform übertragen werden.
+                            Wenn ein Nutzer eine Plattform aufruft und eine andere Einheit durch diese Plattform einen
+                            Cookie überträgt, handelt es sich um einen Drittanbieter-Cookie.
+                        </p>
+                        <p>
+                            Unbedingt notwendige Cookies: Diese Cookies sind notwendig, damit Sie durch die Plattform
+                            navigieren und ihre Funktionen, wie z. B. den Zugriff auf sichere Bereiche der Plattform,
+                            nutzen können. Ohne diese können bestimmte Services nicht bereitgestellt werden, wie z. B.
+                            die Anzeige von für Ihren Computer bzw. Ihr Gerät angepasster Inhalte.
+                        </p>
+                        <p>
+                            Performance-Cookies: Diese Cookies erheben Informationen darüber, wie Besucher die Plattform
+                            verwenden, z. B. welche Seiten am häufigsten aufgerufen werden und ob sie Fehlermeldungen
+                            von Webseiten erhalten. Diese Cookies sammeln jedoch keine Informationen zur Identität des
+                            Besuchers. Alle Informationen, die diese Cookies sammeln, werden zusammengefasst und sind
+                            daher anonym. Sie werden nur verwendet, um die Plattform zu optimieren.
+                        </p>
+                        <p>
+                            Funktionalitäts-Cookies: Diese Cookies ermöglichen der Plattform, von Ihnen getroffene
+                            Entscheidungen zu speichern (z. B. Spracheinstellungen und Ihre Region) und Ihnen
+                            verbesserte, persönlichere Funktionen zu bieten. Sie können auch dazu verwendet werden, Ihre
+                            Einstellungen hinsichtlich der Textgröße, Schriftart und anderer individualisierbarer Teile
+                            der Website zu speichern. Sie können ebenfalls dazu verwendet werden, um von Ihnen
+                            gewünschte Services bereitzustellen wie z. B. die Anzeige eines Videos oder die
+                            Kommentarfunktion innerhalb eines Blogs. Die Informationen, die diese Cookies sammeln,
+                            können anonymisiert werden. Ihre Surfaktivitäten können auf anderen Plattformen nicht
+                            nachverfolgt werden.
+                        </p>
+                        <p>
+                            Social-Media-Cookies: Diese Cookies werden verwendet, wenn Sie auf der Plattform eine
+                            Schaltfläche zum Teilen von Informationen auf sozialen Medien anklicken. Das soziale
+                            Netzwerk zeichnet diese Aktion auf und kann sie zu Marketing- oder Werbezwecken verwenden.
+                        </p>
+                        <p>
+                            Marketing-/Werbe-Cookies: Diese Cookies werden verwendet, um Ihnen Werbeeinblendungen
+                            anzuzeigen, die aufgrund Ihrer Interessen für Sie relevant sein könnten. Sie werden auch
+                            dazu verwendet, um die Häufigkeit zu begrenzen, mit der Ihnen eine bestimmte Werbung gezeigt
+                            wird. Wir setzen Cookies ebenfalls ein um zu messen, wie effektiv eine Werbekampagne ist.
+                            Sie werden üblicherweise mit unserer Erlaubnis von Werbenetzwerken platziert und zeichnen
+                            Ihren Besuch auf einer Plattform auf. Diese Information wird an andere Organisationen wie z.
+                            B. Werbeanbieter weitergegeben. Oftmals sind Marketing- und Werbe-Cookies an
+                            Plattformfunktionen gekoppelt. Unsere Werbe-Cookies ermöglichen Ihnen auch, an
+                            Kundenumfragen teilzunehmen und uns so Ihr Feedback zukommen zu lassen, damit wir Ihr
+                            Nutzererlebnis bei uns verbessern können.
+                        </p>
+                        <p>
+                            Google Analytics
+                        </p>
+                        <p>
+                            Wir nutzen den Dienst Google Analytics der Google Inc. Dieser Dienst ermöglicht eine Analyse
+                            der Benutzung unserer Internetseiten und verwendet dazu Cookies. Zu diesem Zweck werden die
+                            durch das Cookie erzeugten Informationen wie Ihre anonymisierte IP-Adresse in unserem
+                            Auftrag an einen Server von Google Inc. in den USA übertragen, dort gespeichert und
+                            ausgewertet. Denn auf dieser Webseite wurde Google Analytics um den Code
+                            „gat._anonymizeIp();“ erweitert. Hierdurch ist eine anonymisierte Erfassung von IP-Adressen
+                            sichergestellt. Die Anonymisierung Ihrer IP-Adresse erfolgt in der Regel durch Kürzung Ihrer
+                            IP-Adresse durch Google Inc. innerhalb der Europäischen Union oder in anderen
+                            Vertragsstaaten des Europäischen Wirtschaftsraumes (EWR). In Ausnahmefällen wird Ihre
+                            IP-Adresse an einen Server der Google Inc. in den USA übertragen und erst dort anonymisiert.
+                            Ihre hierbei übermittelte IP-Adresse wird nicht mit anderen Daten von Google Inc.
+                            zusammengeführt. Im Rahmen der Google Analytics-Werbefunktion werden das Remarketing und die
+                            Berichte zur Leistung nach demografischen Merkmalen und Interessen genutzt. Diese Verfahren
+                            haben den Zweck, mit Hilfe der Informationen über das Nutzerverhalten die Werbemaßnahmen
+                            stärker an den Interessen der jeweiligen Nutzer auszurichten. Im Rahmen des Remarketings
+                            können auf Basis des Surfverhaltens des Users auf dieser Webseite personalisierte
+                            Werbemaßnahmen auf anderen Internetseiten geschaltet werden. Dabei können die Werbemittel
+                            Produkte enthalten, die sich der User zuvor auf der Webseite angeschaut hat. Sofern Sie
+                            zugestimmt haben, dass ihr Web- und App-Browserverlauf von Google mit ihrem Google-Konto
+                            verknüpft wird und Informationen aus ihrem Google-Konto zum Personalisieren von Anzeigen
+                            verwendet werden, verwendet Google diese Daten für ein geräteübergreifendes Remarketing. Der
+                            Erfassung Ihrer Daten durch Google Analytics können Sie jederzeit widersprechen. Dazu stehen
+                            Ihnen folgende Möglichkeiten zur Verfügung:
+                        </p>
+                        <p>
+                            Die meisten Browser akzeptieren Cookies automatisch. Sie können die Verwendung von Cookies
+                            jedoch durch Einstellung Ihres Browsers verhindern; in diesem Fall können aber ggf. nicht
+                            sämtliche Funktionen der Internetseite genutzt werden. Die Einstellungen müssen Sie für
+                            jeden Browser, den Sie nutzen, gesondert vornehmen.
+                            Sie können darüber hinaus die Erfassung sowie die Verarbeitung dieser Daten durch Google
+                            Inc. verhindern, indem Sie das unter dem folgenden Link verfügbare Browser-Ad-On
+                            herunterladen und installieren: <a
+                                href="https://tools.google.com/dlpage/gaoptout?hl=de">https://tools.google.com/dlpage/gaoptout?hl=de</a>
+                            Alternativ dazu oder innerhalb von Browsern auf mobilen Geräten klicken Sie bitte auf
+                            folgenden Link: Google Analytics deaktivieren Dabei wird ein Opt-Out-Cookie auf Ihrem Gerät
+                            für unsere Internetseiten mit Wirkung für Ihren derzeit verwendeten Browser abgelegt.
+                            Löschen Sie Ihre Cookies in diesem Browser, müssen Sie erneut auf diesen Link klicken.
+                        </p>
+                        <p>
+                            Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter
+                            <a
+                                href="http://www.google.com/analytics/terms/de.html">http://www.google.com/analytics/terms/de.html</a>
+                            bzw. unter <a
+                                href="https://policies.google.com/?hl=de">https://policies.google.com/?hl=de</a>.
+                        </p>
+                        <p>
+                            Google Maps
+                        </p>
+                        <p>
+                            Auf unserer Website verwenden wir Google Maps (API) von Google LLC., 1600 Amphitheatre
+                            Parkway, Mountain View, CA 94043, USA (“Google”). Google Maps ist ein Webdienst zur
+                            Darstellung von interaktiven (Land-)Karten, um geographische Informationen visuell
+                            darzustellen. Über die Nutzung dieses Dienstes wird Ihnen unser Standort angezeigt und eine
+                            etwaige Anfahrt erleichtert. Bereits beim Aufrufen derjenigen Unterseiten, in die die Karte
+                            von Google Maps eingebunden ist, werden Informationen über Ihre Nutzung unserer Website (wie
+                            z.B. Ihre IP-Adresse) an Server von Google in den USA übertragen und dort gespeichert. Dies
+                            erfolgt unabhängig davon, ob Google ein Nutzerkonto bereitstellt, über das Sie eingeloggt
+                            sind, oder ob kein Nutzerkonto besteht. Wenn Sie bei Google eingeloggt sind, werden Ihre
+                            Daten direkt Ihrem Konto zugeordnet. Wenn Sie die Zuordnung mit Ihrem Profil bei Google
+                            nicht wünschen, müssen Sie sich vor Aktivierung des Buttons ausloggen. Google speichert Ihre
+                            Daten (selbst für nicht eingeloggte Nutzer) als Nutzungsprofile und wertet diese aus. Eine
+                            solche Auswertung erfolgt insbesondere gemäß Art. 6 Abs. 1 lit.f DSGVO auf Basis der
+                            berechtigten Interessen von Google an der Einblendung personalisierter Werbung,
+                            Marktforschung und/oder bedarfsgerechten Gestaltung seiner Website. Ihnen steht ein
+                            Widerspruchsrecht zu gegen die Bildung dieser Nutzerprofile, wobei Sie sich zur Ausübung
+                            dessen an Google richten müssen. Ausführliche Informationen zum Datenschutz im Zusammenhang
+                            mit der Verwendung von Google Maps finden Sie auf der Internetseite von Google („Google
+                            Privacy Policy“): http://www.google.de/intl/de/policies/privacy/
+                        </p>
+                        <p>
+                            Facebook
+                        </p>
+                        <p>
+                            Auf unseren Seiten sind Plugins des sozialen Netzwerks Facebook, Anbieter Facebook Inc., 1
+                            Hacker Way, Menlo Park, California 94025, USA, integriert. Die Facebook-Plugins erkennen Sie
+                            an dem Facebook-Logo oder dem „Like-Button“ („Gefällt mir“) auf unserer Seite. Eine
+                            Übersicht über die Facebook-Plugins finden Sie hier:
+                            http://developers.facebook.com/docs/plugins/. Wenn Sie unsere Seiten besuchen, wird über das
+                            Plugin eine direkte Verbindung zwischen Ihrem Browser und dem Facebook-Server hergestellt.
+                            Facebook erhält dadurch die Information, dass Sie mit Ihrer IP-Adresse unsere Seite besucht
+                            haben. Wenn Sie den Facebook „Like-Button“ anklicken während Sie in Ihrem Facebook-Account
+                            eingeloggt sind, können Sie die Inhalte unserer Seiten auf Ihrem Facebook-Profil verlinken.
+                            Dadurch kann Facebook den Besuch unserer Seiten Ihrem Benutzerkonto zuordnen. Wir weisen
+                            darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten
+                            Daten sowie deren Nutzung durch Facebook erhalten. Weitere Informationen hierzu finden Sie
+                            in der Datenschutzerklärung von Facebook unter http://de-de.facebook.com/policy.php.
+                        </p>
+                        <p>
+                            Pinterest
+                        </p>
+                        <p>
+                            Wir verwenden auf unserer Webseite zudem das PlugIn Pinterest, das von der Pinterest Inc.,
+                            808 Brannan Street San Francisco, CA 94103-490, USA betrieben wird. Wenn Sie eine Seite
+                            aufrufen, die ein solches Plugin enthält, stellt Ihr Browser´eine direkte Verbindung zu den
+                            Servern von Pinterest her. Das Plugin übermittelt dabei Protokolldaten an den Server von
+                            Pinterest in die USA. Diese Protokolldaten enthalten möglicherweise Ihre IP-Adresse,
+                            dieAdresse der besuchten Websites, die ebenfalls Pinterest-Funktionen enthalten, Art und
+                            Einstellungen des Browsers, Datum und Zeitpunkt der Anfrage, Ihre Verwendungsweise von
+                            Pinterest sowie Cookies. Weitere Informationen zu Zweck, Umfang und weiterer Verarbeitung
+                            und Nutzung der Daten durch Pinterest sowie Ihre diesbezüglichen Rechte und Möglichkeiten
+                            zum Schutz Ihrer Privatsphäre finden Sie unter
+                            <a
+                                href="https://policy.pinterest.com/de/privacy-policy">https://policy.pinterest.com/de/privacy-policy.</a>
+                        </p>
+                        <p>
+                            Vimeo
+                        </p>
+                        <p>
+                            Auf unserer Website sind Plugins des Videoportals Vimeo der Vimeo, LLC, 555 West 18th
+                            Street, New York, New York 10011, USA eingebunden. Wenn Sie eine Seite unseres We-bauftritts
+                            aufrufen, die ein solches Plugin enthält, stellt Ihr Browser eine direkte Verbindung zu den
+                            Servern von Vimeo her. Der Inhalt des Plugins wird von Vimeo direkt an Ihren Browser
+                            übermittelt und in die Seite eingebunden. Durch diese Einbindung erhält Vimeo die
+                            In-formation, dass Ihr Browser die entsprechende Seite unseres Webauftritts aufgerufen hat,
+                            auch wenn Sie keinen Vimeo-Account besitzen oder gerade nicht bei Vimeo eingeloggt sind.
+                            Diese Information (einschließlich Ihrer IP-Adresse) wird von Ihrem Browser direkt an einen
+                            Server von Vimeo in die USA übermittelt und dort gespeichert. Sind Sie bei Vimeo eingeloggt,
+                            kann Vimeo den Besuch unserer Website Ihrem Vimeo-Account unmittelbar zuordnen. Wenn Sie mit
+                            den Plugins interagieren (wie z.B. Betätigung des Start-Buttons eines Videos), wird diese
+                            Information ebenfalls direkt an einen Server von Vimeo übermittelt und dort ge-speichert.
+                            Zweck und Umfang der Datenerhebung und die weitere Verarbeitung und Nutzung der Daten durch
+                            Vimeo sowie Ihre diesbezüglichen Rechte und Einstellungsmöglichkeiten zum Schutz Ihrer
+                            Privatsphäre entnehmen Sie bitte den Datenschutzhinweisen von Vimeo:
+                            <a href="http://vimeo.com/privacy">http://vimeo.com/privacy.</a>
+                        </p>
+                        <p>
+                            Instagram
+                        </p>
+                        <p>
+                            Auf unseren Seiten sind Funktionen des Dienstes Instagram eingebunden. Diese Funktionen
+                            werden angeboten durch die Instagram Inc., 1601 Willow Road, Menlo Park, CA, 94025, USA
+                            integriert. Wenn Sie in Ihrem Instagram - Account eingeloggt sind können Sie durch Anklicken
+                            des Instagram - Buttons die Inhalte unserer Seiten mit Ihrem Instagram - Profil verlinken.
+                            Dadurch kann Instagram den Besuch unserer Seiten Ihrem Benutzerkonto zuordnen. Wir weisen
+                            darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten
+                            Daten sowie deren Nutzung durch Instagram erhalten.
+                            Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Instagram:
+                            <a
+                                href="http://instagram.com/about/legal/privacy/">http://instagram.com/about/legal/privacy/.</a>
+                        </p>
+                        <p>
+                            Stand dieser Datenschutzerklärung
+                        </p>
+                        <p>
+                            Mai 2018
+                        </p>
+                        <p>
+                            Wir behalten uns vor, diese Datenschutzerklärung jederzeit mit Wirkung für die Zukunft zu
+                            ändern.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="scrollTopBtn"
+        class="fixed opacity-0 bottom-20 right-20 bg-green text-white shadow-[2px_2px_0_0_#fff] size-40 grid place-items-center z-50 hover:shadow-none transition_slow border">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-arrow-up-icon lucide-arrow-up">
+            <path d="m5 12 7-7 7 7" />
+            <path d="M12 19V5" />
+        </svg>
+    </button>
+
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/ScrollTrigger.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/fancybox.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
