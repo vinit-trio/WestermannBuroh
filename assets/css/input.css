@@ -264,17 +264,11 @@
 .portrait_gallery .gallery {
     display: flex;
     flex-wrap: wrap;
-    --height: 200;
+    --height: 250;
     --ratio: 1;
 }
 
 @media (min-width: 992px) {
-    .portrait_gallery .gallery {
-        --height: 300;
-    }
-}
-
-@media (min-width: 1200px) {
     .portrait_gallery .gallery {
         --height: 350;
     }
