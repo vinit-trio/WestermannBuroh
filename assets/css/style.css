@@ -226,8 +226,8 @@
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
   }
-  .top-85 {
-    top: calc(var(--spacing) * 85);
+  .top-75 {
+    top: calc(var(--spacing) * 75);
   }
   .right-20 {
     right: calc(var(--spacing) * 20);
@@ -487,6 +487,9 @@
   }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
   }
   .overflow-y-auto {
     overflow-y: auto;

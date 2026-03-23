@@ -163,9 +163,10 @@ if (typeof Fancybox !== "undefined") {
     });
 }
 
-// 1. Select all gallery items and make them focusable
-const galleryItems = Array.from(document.querySelectorAll('.portrait_gallery .gallery-item'));
-galleryItems.forEach(item => {
+// 1. Select all gallery items across the site
+const allGalleryItemsSelector = '.gallery-item';
+document.querySelectorAll('.portrait_gallery .gallery-item').forEach(item => {
+    // This maintains backward compatibility for portrait gallery item focus setup
     item.setAttribute('tabindex', '0');
 });
 
@@ -178,20 +179,85 @@ function getElementCenter(el) {
     };
 }
 
+// Helper function to get all focusable elements
+function getFocusableElements() {
+    return Array.from(document.querySelectorAll(
+        'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    )).filter(el => {
+        return !el.closest('[inert]') && !el.closest('[aria-hidden="true"]') && el.offsetWidth > 0 && el.offsetHeight > 0;
+    });
+}
+
 // 2. Listen for keyboard navigation
 document.addEventListener('keydown', (e) => {
     const currentFocus = document.activeElement;
 
     // Check if the currently focused element is one of our gallery items
-    if (!galleryItems.includes(currentFocus)) return;
+    if (!currentFocus || !currentFocus.classList.contains('gallery-item')) return;
+    
+    // Handle Tab navigation for Left-to-Right visual order in Masonry layouts
+    if (e.key === 'Tab') {
+        const gallery = currentFocus.closest('.gallery');
+        if (!gallery) return;
+        
+        const itemsInGallery = Array.from(gallery.querySelectorAll('.gallery-item'));
+        
+        // Sort items by their visual position: Top to Bottom, then Left to Right
+        itemsInGallery.sort((a, b) => {
+            const aRect = a.getBoundingClientRect();
+            const bRect = b.getBoundingClientRect();
+            
+            // Treat as the same "row" if the top difference is less than 150px
+            if (Math.abs(aRect.top - bRect.top) < 150) {
+                return aRect.left - bRect.left;
+            }
+            return aRect.top - bRect.top;
+        });
+        
+        const currentIndex = itemsInGallery.indexOf(currentFocus);
+        
+        if (e.shiftKey) {
+            if (currentIndex > 0) {
+                e.preventDefault();
+                itemsInGallery[currentIndex - 1].focus();
+                itemsInGallery[currentIndex - 1].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                e.preventDefault();
+                const allFocusable = getFocusableElements();
+                const firstGalleryFocusable = itemsInGallery[0];
+                const globalIndex = allFocusable.indexOf(firstGalleryFocusable);
+                if (globalIndex > 0) {
+                    allFocusable[globalIndex - 1].focus();
+                }
+            }
+        } else {
+            if (currentIndex < itemsInGallery.length - 1) {
+                e.preventDefault();
+                itemsInGallery[currentIndex + 1].focus();
+                itemsInGallery[currentIndex + 1].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                e.preventDefault();
+                const allFocusable = getFocusableElements();
+                const galleryFocusables = Array.from(gallery.querySelectorAll('.gallery-item, [tabindex="0"], a, button'));
+                const lastGalleryFocusable = galleryFocusables[galleryFocusables.length - 1];
+                
+                const globalIndex = allFocusable.indexOf(lastGalleryFocusable);
+                if (globalIndex > -1 && globalIndex < allFocusable.length - 1) {
+                    allFocusable[globalIndex + 1].focus();
+                }
+            }
+        }
+        return;
+    }
 
-    // We only care about arrow keys for this
+    // We only care about arrow keys for this down here
     const arrowKeys = ['ArrowRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown'];
     if (!arrowKeys.includes(e.key)) return;
 
     // Prevent default scrolling when using arrows on the gallery
     e.preventDefault();
 
+    const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
     const currentCenter = getElementCenter(currentFocus);
     let nextItem = null;
     let bestScore = Infinity; // Lower score means a "closer" visual match
@@ -388,11 +454,11 @@ gsap.utils.toArray(".services .service").forEach((item, i) => {
         opacity: 1,
         y: 0,
         duration: 0.8,
-        delay: i * 0.3,
+        delay: i * 0.15,
         ease: "power2.out",
         scrollTrigger: {
             trigger: item,
-            start: "top 100%",
+            start: "top 150%",
             once: true
         }
     });
