@@ -241,8 +241,20 @@
 }
 
 .fancybox_container .gallery {
-    column-count: 3;
+    column-count: 1;
     column-gap: 0;
+}
+
+@media (min-width: 768px) {
+    .fancybox_container .gallery {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .fancybox_container .gallery {
+        column-count: 3;
+    }
 }
 
 .gallery-item {
